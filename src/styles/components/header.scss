@@ -20,12 +20,13 @@
       }
     }
     .menu-button {
-      height: 12px;
+      height: 10px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      cursor: pointer;
       span {
-        width: 32px;
+        width: 28px;
         height: 1px;
         background-color: #000;
         display: block;
