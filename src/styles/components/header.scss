@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 128px;
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      a {
+        color: #000;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        font-weight: 700;
+      }
+    }
+    .menu-button {
+      height: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      span {
+        width: 32px;
+        height: 1px;
+        background-color: #000;
+        display: block;
+      }
+    }
+  }
+}
