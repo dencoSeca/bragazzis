@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function Header() {
       <div className="header">
         <div className="container">
           <div className="logo">
-            <a href="/">BRAGAZZI'S</a>
+            <Link to="/">BRAGAZZI'S</Link>
           </div>
           <div className="menu-button">
             <span></span>

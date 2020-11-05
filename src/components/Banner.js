@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+// Assets
 import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
 
 export default function Banner() {
@@ -15,9 +18,9 @@ export default function Banner() {
             </div>
           </h2>
           <div className="link">
-            <a href="/">
+            <Link to="/">
               Our story <RightArrow />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

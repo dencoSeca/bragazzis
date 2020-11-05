@@ -25,16 +25,17 @@ export default function Home() {
       })
       .from('.box', 0.8, {
         opacity: 0,
-        y: 100,
-        ease: 'power3.easeOut',
+        y: 200,
+        ease: 'power4.easeOut',
+        delay: -0.5,
         stagger: {
           amount: 0.3
         }
       })
       .from('.box .image img', 0.8, {
         scale: 1.2,
-        ease: 'power3.easeOut',
-        delay: -1,
+        ease: 'power4.easeOut',
+        delay: -1.5,
         stagger: {
           amount: 0.3
         }
