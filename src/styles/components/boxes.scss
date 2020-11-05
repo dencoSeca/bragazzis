@@ -7,12 +7,19 @@
     width: 33.3333%;
     position: relative;
     background-color: #000;
+    &:hover {
+      .image {
+        opacity: 0.35;
+      }
+    }
     .image {
       height: 100%;
       width: 100%;
       overflow: hidden;
       position: relative;
       z-index: 1;
+      transition: 0.3s ease-out;
+
       img {
         height: 100%;
         width: 100%;
