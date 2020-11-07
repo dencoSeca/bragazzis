@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
+
+  // Load Animation
   useEffect(() => {
     gsap.from('.header', 1, {
       opacity: 0,
@@ -11,6 +14,34 @@ export default function Header() {
     })
   }, [])
 
+  useEffect(() => {
+    if (menuIsOpen) {
+      gsap.to('.main', 0.5, {
+        y: '50vh',
+        ease: 'power3.easeOut'
+      })
+      gsap.to('body', 0, {
+        css: {
+          overflow: 'hidden'
+        }
+      })
+    } else if (!menuIsOpen) {
+      gsap.to('.main', 0.5, {
+        y: '0vh',
+        ease: 'power3.easeOut'
+      })
+      gsap.to('body', 0, {
+        css: {
+          overflow: 'auto'
+        }
+      })
+    }
+  }, [menuIsOpen])
+
+  function handleMenuClick() {
+    setMenuIsOpen(!menuIsOpen)
+  }
+
   return (
     <>
       <div className="header">
@@ -18,7 +49,7 @@ export default function Header() {
           <div className="logo">
             <Link to="/">BRAGAZZI'S</Link>
           </div>
-          <div className="menu-button">
+          <div className="menu-button" onClick={handleMenuClick}>
             <span></span>
             <span></span>
           </div>
