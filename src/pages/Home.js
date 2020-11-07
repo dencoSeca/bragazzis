@@ -13,14 +13,15 @@ export default function Home() {
       opacity: 0,
       y: 32,
       skewY: 4,
-      delay: 0.7,
+      delay: 0.3,
       ease: 'power3.easeOut',
       stagger: {
         amount: 0.3
       }
     })
-      .from('.link', 0.8, {
+      .from('.link', 1, {
         opacity: 0,
+        delay: 0.5,
         ease: 'power3.easeOut'
       })
       .from('.box', 0.8, {

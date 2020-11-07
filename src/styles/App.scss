@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap');
 @import './normalize.scss';
 @import 'bootstrap/scss/bootstrap-grid.scss';
+@import './variables.scss';
 
 // Components
 @import './components/header.scss';
@@ -12,6 +13,7 @@ html {
   visibility: hidden;
   user-select: none;
   overscroll-behavior: none;
+  z-index: 0;
   font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
