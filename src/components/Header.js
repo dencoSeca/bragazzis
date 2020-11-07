@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { Link } from 'react-router-dom'
 
-const tl = gsap.timeline()
-
+const ease = 'expo.out'
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
@@ -11,7 +10,7 @@ export default function Header() {
   useEffect(() => {
     gsap.from('.header', 1, {
       opacity: 0,
-      ease: 'power3.easeOut',
+      ease: ease,
       delay: 1.6
     })
   }, [])
@@ -23,9 +22,9 @@ export default function Header() {
           overflow: 'hidden'
         }
       })
-      gsap.to('.main', 0.5, {
+      gsap.to('.main', 0.8, {
         y: '50vh',
-        ease: 'power3.easeOut'
+        ease: ease
       })
     } else if (!menuIsOpen) {
       gsap.to('body', 0, {
@@ -33,9 +32,9 @@ export default function Header() {
           overflow: 'auto'
         }
       })
-      gsap.to('.main', 0.5, {
+      gsap.to('.main', 0.8, {
         y: '0vh',
-        ease: 'power3.easeOut'
+        ease: ease
       })
     }
   }, [menuIsOpen])

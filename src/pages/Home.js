@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import Boxes from '../components/Boxes'
 
 const tl = gsap.timeline()
+const ease = 'power4.easeOut'
 
 export default function Home() {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function Home() {
       y: 32,
       skewY: 4,
       delay: 0.3,
-      ease: 'power3.easeOut',
+      ease: ease,
       stagger: {
         amount: 0.3
       }
@@ -22,12 +23,12 @@ export default function Home() {
       .from('.link', 1, {
         opacity: 0,
         delay: 0.5,
-        ease: 'power3.easeOut'
+        ease: ease
       })
       .from('.box', 0.8, {
         opacity: 0,
         y: 200,
-        ease: 'power4.easeOut',
+        ease: ease,
         delay: -0.5,
         stagger: {
           amount: 0.3
@@ -35,7 +36,7 @@ export default function Home() {
       })
       .from('.box .image img', 0.8, {
         scale: 1.2,
-        ease: 'power4.easeOut',
+        ease: ease,
         delay: -1.5,
         stagger: {
           amount: 0.3
