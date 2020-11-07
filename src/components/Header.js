@@ -23,40 +23,20 @@ export default function Header() {
           overflow: 'hidden'
         }
       })
-
-      tl.to('.main', 0.5, {
+      gsap.to('.main', 0.5, {
         y: '50vh',
         ease: 'power3.easeOut'
       })
-        .to('.logo a', 0.1, {
-          color: '#fff',
-          ease: 'power3.easeOut'
-        })
-        .to('.menu-button span', 0.1, {
-          backgroundColor: '#fff',
-          ease: 'power3.easeOut',
-          delay: -0.1
-        })
     } else if (!menuIsOpen) {
       gsap.to('body', 0, {
         css: {
           overflow: 'auto'
         }
       })
-
-      tl.to('.main', 0.5, {
+      gsap.to('.main', 0.5, {
         y: '0vh',
         ease: 'power3.easeOut'
       })
-        .to('.logo a', 0.1, {
-          color: '#000',
-          ease: 'power3.easeOut'
-        })
-        .to('.menu-button span', 0.1, {
-          backgroundColor: '#000',
-          ease: 'power3.easeOut',
-          delay: -0.1
-        })
     }
   }, [menuIsOpen])
 
