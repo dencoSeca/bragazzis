@@ -56,9 +56,11 @@ export default function App() {
   return (
     <>
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
+      <div className="main">
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </div>
     </>
   )
 }

@@ -23,6 +23,7 @@ html {
 
 a {
   text-decoration: none;
+  color: $black;
 
   &:visited {
     text-decoration: none;
@@ -37,4 +38,8 @@ a {
   &:active {
     text-decoration: none;
   }
+}
+
+.main {
+  visibility: hidden;
 }

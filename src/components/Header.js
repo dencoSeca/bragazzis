@@ -26,8 +26,8 @@ export default function Header() {
       </div>
       <div className="menu">
         <div className="container">
-          <div className="inner">
-            <div className="site-links">
+          <div className="row">
+            <div className="site-links col-md-5">
               <ul>
                 <li>
                   <Link to="/our-story">Our Story</Link>
@@ -39,11 +39,11 @@ export default function Header() {
                   <Link to="/shop">Shop</Link>
                 </li>
                 <li>
-                  <Link to="/Events">Events</Link>
+                  <Link to="/events">Events</Link>
                 </li>
               </ul>
             </div>
-            <div className="details">
+            <div className="details col-md-7">
               <div className="card address">
                 <h5>Address</h5>
                 <span>224-226 Abbeydale Road</span>
@@ -59,6 +59,7 @@ export default function Header() {
                 <span>0114 258 1483</span>
               </div>
               <div className="card social">
+                <h5>Social</h5>
                 <span>Facebook</span>
                 <span>Instagram</span>
                 <span>Twitter</span>
