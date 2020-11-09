@@ -99,6 +99,7 @@ export default function Header() {
                 <span>Twitter</span>
               </div>
               <div className="card site-info">
+                <h5>Site</h5>
                 <span>&copy; Bragazzis Ltd 2020</span>
                 <span>Site by LEON BROWN</span>
               </div>
