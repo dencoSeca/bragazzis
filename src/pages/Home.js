@@ -42,6 +42,12 @@ export default function Home() {
           amount: 0.3
         }
       })
+      // Enable scrolling after animation has finished
+      .to('.boxes', 0, {
+        css: {
+          overflow: 'auto'
+        }
+      })
   }, [])
 
   return (
