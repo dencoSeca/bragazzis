@@ -21,12 +21,13 @@
     }
     .link {
       a {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: space-between;
         width: 128px;
         font-size: 1.4rem;
         svg {
+          position: relative;
         }
       }
     }

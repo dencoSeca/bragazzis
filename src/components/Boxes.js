@@ -30,9 +30,9 @@ const boxes = [
 export default function Boxes() {
   return (
     <>
-      <div className="boxes">
+      <div className="boxes row no-gutters">
         {boxes.map(({ id, name, tagline, image }) => (
-          <div className="box" key={id}>
+          <div className="box col-lg-4" key={id}>
             <div className="image">
               <img src={image} alt={name} />
             </div>

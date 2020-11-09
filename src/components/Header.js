@@ -3,6 +3,8 @@ import gsap from 'gsap'
 import { Link } from 'react-router-dom'
 
 const ease = 'expo.out'
+const duration = 0.8
+
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
@@ -22,7 +24,7 @@ export default function Header() {
           overflow: 'hidden'
         }
       })
-      gsap.to('.main', 0.8, {
+      gsap.to('.main', duration, {
         y: '50vh',
         ease: ease
       })
@@ -32,7 +34,7 @@ export default function Header() {
           overflow: 'auto'
         }
       })
-      gsap.to('.main', 0.8, {
+      gsap.to('.main', duration, {
         y: '0vh',
         ease: ease
       })
@@ -50,10 +52,10 @@ export default function Header() {
           <div className="logo">
             <Link to="/">BRAGAZZI'S</Link>
           </div>
-          <div className="menu-button" onClick={handleMenuClick}>
+          <button className="menu-button" onClick={handleMenuClick}>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </div>
       </div>
       <div className="menu">
@@ -81,7 +83,7 @@ export default function Header() {
                 <span>224-226 Abbeydale Road</span>
                 <span>Sheffield</span>
                 <span>S7 1FL</span>
-                <span>Google Maps Link</span>
+                <span>[google maps link]</span>
               </div>
               <div className="card contact">
                 <h5>Get in touch</h5>

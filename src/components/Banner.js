@@ -1,8 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 
 // Assets
 import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
+
+function handleMouseEnter() {
+  gsap.to('.link a svg', 1, {
+    left: 15,
+    ease: 'power4.easeOut'
+  })
+}
+
+function handleMouseLeave() {
+  gsap.to('.link a svg', 1, {
+    left: 0,
+    ease: 'power4.easeOut'
+  })
+}
 
 export default function Banner() {
   return (
@@ -18,7 +33,11 @@ export default function Banner() {
             </div>
           </h2>
           <div className="link">
-            <Link to="/">
+            <Link
+              to="/"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               Our story <RightArrow />
             </Link>
           </div>
