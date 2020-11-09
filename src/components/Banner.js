@@ -7,15 +7,15 @@ import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
 
 function handleMouseEnter() {
   gsap.to('.link a svg', 1, {
-    left: 15,
-    ease: 'power4.easeOut'
+    left: 10,
+    ease: 'expo.out'
   })
 }
 
 function handleMouseLeave() {
   gsap.to('.link a svg', 1, {
     left: 0,
-    ease: 'power4.easeOut'
+    ease: 'expo.out'
   })
 }
 

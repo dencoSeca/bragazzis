@@ -90,18 +90,28 @@ export default function Header() {
                 <span>
                   <a href="mailto:info@bragazzis.co.uk">info@bragazzis.co.uk</a>
                 </span>
-                <span>0114 258 1483</span>
+                <span>
+                  <a href="tel:+441142581483">0114 258 1483</a>
+                </span>
               </div>
               <div className="card social">
                 <h5>Social</h5>
-                <span>Facebook</span>
-                <span>Instagram</span>
-                <span>Twitter</span>
+                <a href="/">
+                  <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+                <a href="/">
+                  <i class="fab fa-instagram-square fa-2x"></i>
+                </a>
+                <a href="/">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                </a>
               </div>
               <div className="card site-info">
                 <h5>Site</h5>
                 <span>&copy; Bragazzis Ltd 2020</span>
-                <span>Site by LEON BROWN</span>
+                <span>
+                  <a href="https://www.leonbrown.dev">Site by LEON BROWN</a>
+                </span>
               </div>
             </div>
           </div>

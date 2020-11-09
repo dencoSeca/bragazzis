@@ -66,6 +66,25 @@
               font-size: 3.6rem;
               font-weight: 700;
               color: $black;
+              position: relative;
+              &:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                display: block;
+                margin-top: 2px;
+                right: 0;
+                background: $black;
+                transition: 0.4s ease;
+              }
+              &:hover {
+                &:after {
+                  width: 100%;
+                  left: 0;
+                  background: $black;
+                }
+              }
             }
           }
         }
@@ -83,9 +102,34 @@
           }
           span {
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             font-size: 1.2rem;
             color: $black;
+            position: relative;
+            width: fit-content;
+            a {
+              &:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                display: block;
+                right: 0;
+                background: $black;
+                transition: 0.4s ease;
+              }
+              &:hover {
+                &:after {
+                  width: 100%;
+                  left: 0;
+                  background: $black;
+                }
+              }
+            }
+          }
+          i {
+            color: $black;
+            margin-right: 8px;
           }
         }
       }
