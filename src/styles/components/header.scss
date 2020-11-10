@@ -71,8 +71,7 @@
   padding-top: 100px;
   background-color: $menuBgc;
   @media (max-width: 760px) {
-    height: 70vh;
-    height: calc(var(--vh, 1vh) * 70);
+    height: 580px;
     padding-top: 50px;
   }
   .container {

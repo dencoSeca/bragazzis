@@ -24,7 +24,7 @@ export default function Header() {
         }
       })
       gsap.to('.main', 0.8, {
-        y: window.innerWidth < 760 ? '70vh' : '50vh',
+        y: window.innerWidth < 760 ? '580px' : '50vh',
         ease: ease
       })
       gsap.to('.logo a', 0.1, {
@@ -112,13 +112,13 @@ export default function Header() {
               <div className="card social">
                 <h5>Social</h5>
                 <a href="/">
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>
                 <a href="/">
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a href="/">
-                  <i class="fab fa-tripadvisor"></i>
+                  <i className="fab fa-tripadvisor"></i>
                 </a>
               </div>
               <div className="card site-info">
