@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 const ease = 'expo.out'
 
-export default function Header() {
+function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
   // Load Animation
@@ -17,6 +17,10 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
+    history.listen(() => {
+      setMenuIsOpen(false)
+    })
+
     if (menuIsOpen) {
       gsap.to('body', 0, {
         css: {
@@ -54,7 +58,7 @@ export default function Header() {
         delay: 0.24
       })
     }
-  }, [menuIsOpen])
+  }, [history, menuIsOpen])
 
   function handleMenuClick() {
     setMenuIsOpen(!menuIsOpen)
@@ -103,7 +107,13 @@ export default function Header() {
               <div className="card contact">
                 <h5>Get in touch</h5>
                 <span>
-                  <a href="mailto:info@bragazzis.co.uk">info@bragazzis.co.uk</a>
+                  <a
+                    href="mailto:info@bragazzis.co.uk"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    info@bragazzis.co.uk
+                  </a>
                 </span>
                 <span>
                   <a href="tel:+441142581483">0114 258 1483</a>
@@ -135,3 +145,5 @@ export default function Header() {
     </>
   )
 }
+
+export default withRouter(Header)

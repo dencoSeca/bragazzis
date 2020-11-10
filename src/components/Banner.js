@@ -34,7 +34,7 @@ export default function Banner() {
           </h2>
           <div className="link">
             <Link
-              to="/"
+              to="/our-story"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
