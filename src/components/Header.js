@@ -3,7 +3,6 @@ import gsap from 'gsap'
 import { Link } from 'react-router-dom'
 
 const ease = 'expo.out'
-const duration = 0.8
 
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -24,8 +23,16 @@ export default function Header() {
           overflow: 'hidden'
         }
       })
-      gsap.to('.main', duration, {
+      gsap.to('.main', 0.8, {
         y: '50vh',
+        ease: ease
+      })
+      gsap.to('.logo a', 0.1, {
+        color: '#fff',
+        ease: ease
+      })
+      gsap.to('.menu-button span', 0.1, {
+        backgroundColor: '#fff',
         ease: ease
       })
     } else if (!menuIsOpen) {
@@ -34,9 +41,17 @@ export default function Header() {
           overflow: 'auto'
         }
       })
-      gsap.to('.main', duration, {
+      gsap.to('.main', 0.8, {
         y: '0vh',
         ease: ease
+      })
+      gsap.to('.logo a', 0, {
+        color: '#000',
+        delay: 0.24,
+      })
+      gsap.to('.menu-button span', 0, {
+        backgroundColor: '#000',
+        delay: 0.24,
       })
     }
   }, [menuIsOpen])
@@ -97,13 +112,13 @@ export default function Header() {
               <div className="card social">
                 <h5>Social</h5>
                 <a href="/">
-                  <i class="fab fa-facebook-square fa-2x"></i>
+                  <i class="fab fa-facebook fa-2x"></i>
                 </a>
                 <a href="/">
-                  <i class="fab fa-instagram-square fa-2x"></i>
+                  <i class="fab fa-instagram fa-2x"></i>
                 </a>
                 <a href="/">
-                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <i class="fab fa-tripadvisor fa-2x"></i>
                 </a>
               </div>
               <div className="card site-info">

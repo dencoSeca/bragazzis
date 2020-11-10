@@ -65,7 +65,7 @@
             a {
               font-size: 3.6rem;
               font-weight: 700;
-              color: $black;
+              color: $white;
               position: relative;
               &:after {
                 content: '';
@@ -75,14 +75,14 @@
                 display: block;
                 margin-top: 2px;
                 right: 0;
-                background: $black;
+                background: $white;
                 transition: 0.4s ease;
               }
               &:hover {
                 &:after {
                   width: 100%;
                   left: 0;
-                  background: $black;
+                  background: $white;
                 }
               }
             }
@@ -98,16 +98,17 @@
           h5 {
             font-size: 1.6rem;
             margin-bottom: 16px;
-            color: $black;
+            color: $white;
           }
           span {
             display: block;
             margin-bottom: 8px;
             font-size: 1.2rem;
-            color: $black;
+            color: $white;
             position: relative;
             width: fit-content;
             a {
+              color: $white;
               &:after {
                 content: '';
                 position: absolute;
@@ -115,21 +116,21 @@
                 height: 2px;
                 display: block;
                 right: 0;
-                background: $black;
+                background: $white;
                 transition: 0.4s ease;
               }
               &:hover {
                 &:after {
                   width: 100%;
                   left: 0;
-                  background: $black;
+                  background: $white;
                 }
               }
             }
           }
           i {
-            color: $black;
-            margin-right: 8px;
+            color: $white;
+            margin-right: 16px;
           }
         }
       }
