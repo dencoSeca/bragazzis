@@ -32,7 +32,7 @@ export default function Boxes() {
     <>
       <div className="boxes row no-gutters">
         {boxes.map(({ id, name, tagline, image }) => (
-          <div className="box col-lg-4" key={id}>
+          <div className="box col-xl-4" key={id}>
             <div className="image">
               <img src={image} alt={name} />
             </div>

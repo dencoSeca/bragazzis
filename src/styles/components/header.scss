@@ -5,7 +5,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 128px;
+  height: 100px;
+  @media (max-width: 760px) {
+    height: 70px;
+  }
   .container {
     height: 100%;
     width: 100%;
@@ -17,6 +20,12 @@
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
         font-weight: 700;
+        @media (max-width: 992px) {
+          font-size: 1rem;
+        }
+        @media (max-width: 760px) {
+          font-size: 0.875rem;
+        }
       }
     }
     .menu-button {
@@ -38,6 +47,14 @@
         background-color: #000;
         display: block;
         margin: 5px;
+        @media (max-width: 992px) {
+          width: 20px;
+          margin: 3px;
+        }
+        @media (max-width: 760px) {
+          width: 18px;
+          margin: 2px;
+        }
       }
     }
   }
@@ -51,8 +68,13 @@
   height: 50vh;
   height: calc(var(--vh, 1vh) * 50);
   width: 100%;
-  padding-top: 128px;
+  padding-top: 100px;
   background-color: $menuBgc;
+  @media (max-width: 760px) {
+    height: 70vh;
+    height: calc(var(--vh, 1vh) * 70);
+    padding-top: 50px;
+  }
   .container {
     .row {
       .site-links {
@@ -67,6 +89,12 @@
               font-weight: 700;
               color: $white;
               position: relative;
+              @media (max-width: 992px) {
+                font-size: 2.6rem;
+              }
+              @media (max-width: 760px) {
+                font-size: 1.875rem;
+              }
               &:after {
                 content: '';
                 position: absolute;
@@ -99,6 +127,12 @@
             font-size: 1.6rem;
             margin-bottom: 16px;
             color: $white;
+            @media (max-width: 992px) {
+              font-size: 1.2rem;
+            }
+            @media (max-width: 760px) {
+              font-size: 1rem;
+            }
           }
           span {
             display: block;
@@ -107,6 +141,13 @@
             color: $white;
             position: relative;
             width: fit-content;
+            @media (max-width: 992px) {
+              font-size: 0.875rem;
+            }
+            @media (max-width: 760px) {
+              font-size: 0.75rem;
+              margin-bottom: 6px;
+            }
             a {
               color: $white;
               &:after {
@@ -131,6 +172,13 @@
           i {
             color: $white;
             margin-right: 16px;
+            font-size: 2rem;
+            @media (max-width: 992px) {
+              font-size: 1.2rem;
+            }
+            @media (max-width: 760px) {
+              font-size: 1rem;
+            }
           }
         }
       }
