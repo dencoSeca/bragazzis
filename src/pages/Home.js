@@ -34,8 +34,8 @@ export default function Home() {
           amount: 0.3
         }
       })
-      .from('.box .image img', 0.8, {
-        scale: 1.2,
+      .from('.box .image img', 1, {
+        scale: 1.4,
         ease: ease,
         delay: -1.5,
         stagger: {

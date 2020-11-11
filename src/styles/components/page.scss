@@ -7,7 +7,10 @@
         justify-content: flex-end;
         h1 {
           transform: rotate(-90deg);
-          font-size: 6rem;
+          font-size: 12rem;
+          position: relative;
+          top: 100px;
+          left: 100px;
           vertical-align: text-bottom;
           text-align: end;
         }
