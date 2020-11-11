@@ -7,6 +7,8 @@
 @import './components/header.scss';
 @import './components/banner.scss';
 @import './components/boxes.scss';
+@import './components/page.scss';
+
 
 body,
 html {
@@ -38,12 +40,11 @@ a {
   &:active {
     text-decoration: none;
   }
-
-  
 }
 
 .main {
   background-color: $white;
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }

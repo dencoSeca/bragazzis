@@ -1,0 +1,19 @@
+.page {
+  padding-top: 100px;
+  .container-fluid {
+    .row {
+      .title {
+        display: flex;
+        justify-content: flex-end;
+        h1 {
+          transform: rotate(-90deg);
+          font-size: 6rem;
+          vertical-align: text-bottom;
+          text-align: end;
+        }
+      }
+      .content {
+      }
+    }
+  }
+}

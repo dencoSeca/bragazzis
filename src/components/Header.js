@@ -46,7 +46,7 @@ function Header({ history }) {
         }
       })
       gsap.to('.main', 0.8, {
-        y: '0vh',
+        y: 0,
         ease: ease
       })
       gsap.to('.logo a', 0, {
