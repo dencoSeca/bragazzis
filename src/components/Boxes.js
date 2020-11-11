@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Assets
 import cafeImg from '../assets/images/cafe-full.jpg'
@@ -10,20 +11,23 @@ const boxes = [
     id: 1,
     name: 'Cafe',
     tagline: 'Grab a sandwich, coffee and a sweet treat.',
-    image: cafeImg
+    image: cafeImg,
+    path: '/cafe'
   },
   {
     id: 2,
     name: 'Shop',
     tagline:
       'Seek inspiration from our packed shelves full of fresh food and pantry fillers.',
-    image: shopImg
+    image: shopImg,
+    path: '/shop'
   },
   {
     id: 3,
     name: 'Events',
     tagline: 'We cater for any event that calls for delicious food.',
-    image: eventsImg
+    image: eventsImg,
+    path: '/events'
   }
 ]
 
@@ -31,15 +35,15 @@ export default function Boxes() {
   return (
     <>
       <div className="boxes row no-gutters">
-        {boxes.map(({ id, name, tagline, image }) => (
+        {boxes.map(({ id, name, tagline, image, path }) => (
           <div className="box col-xl-4" key={id}>
             <div className="image">
               <img src={image} alt={name} />
             </div>
-            <div className="content">
+            <Link className="content" to={path}>
               <h4 className='name'>{name}</h4>
               <span className='tagline'>{tagline}</span>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

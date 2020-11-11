@@ -39,7 +39,9 @@
         }
         svg {
           position: relative;
-          transform: scale(0.7);
+          @media (max-width: 760px) {
+            transform: scale(0.7);
+          }
         }
       }
     }
