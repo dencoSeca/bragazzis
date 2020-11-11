@@ -28,7 +28,7 @@ function Header({ history }) {
         }
       })
       gsap.to('.main', 0.8, {
-        y: window.innerWidth < 760 ? '580px' : '50vh',
+        y: window.innerWidth < 760 ? '580px' : '550px',
         ease: ease
       })
       gsap.to('.logo a', 0.1, {
