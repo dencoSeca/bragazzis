@@ -5,12 +5,10 @@ function Page({ title, children }) {
     <>
       <div className="page">
         <div className="container">
-          <div className="row">
-            <div className="title">
-              <h1>{title}</h1>
-            </div>
-            <div className="content">{children}</div>
+          <div className="title">
+            <h1>{title}</h1>
           </div>
+          <div className="content">{children}</div>
         </div>
       </div>
     </>

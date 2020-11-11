@@ -1,27 +1,29 @@
 .page {
   padding-top: 100px;
   .container {
-    .row {
-      .title {
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        h1 {
-          writing-mode: vertical-rl;
-          transform: rotate(180deg);
-          text-align: end;
-          font-size: 12rem;
-          max-height: 600px;
-        }
-      }
-      .content {
-        min-height: 100vh;
-        width: 100%;
+    width: 100%;
+    position: relative;
+    .title {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-align: end;
+        font-size: 12rem;
+        max-height: 600px;
+        line-height: 8rem;
         position: relative;
-        z-index: 2;
+        left: 100px;
       }
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
     }
   }
 }
