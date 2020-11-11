@@ -4,12 +4,12 @@ function Page({ title, children }) {
   return (
     <>
       <div className="page">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
-            <div className="title col-xl-2">
+            <div className="title">
               <h1>{title}</h1>
             </div>
-            <div className="content col-xl-10">{children}</div>
+            <div className="content">{children}</div>
           </div>
         </div>
       </div>
