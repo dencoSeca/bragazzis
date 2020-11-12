@@ -12,6 +12,7 @@
 // Pages
 @import './pages/ourStory.scss';
 
+// General Styles
 body,
 html {
   visibility: hidden;
@@ -25,6 +26,17 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Hide Scrollbars
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// Remove all styling from link tags
 a {
   text-decoration: none;
   color: $black;
@@ -44,9 +56,11 @@ a {
   }
 }
 
+// Style main container for React Router
 .main {
   background-color: $white;
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  width: 100%;
 }
