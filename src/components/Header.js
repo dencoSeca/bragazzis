@@ -39,6 +39,14 @@ function Header({ history }) {
         backgroundColor: '#fff',
         ease: ease
       })
+      gsap.to('.menu-span-top', 0.8, {
+        marginBottom: 0,
+        ease
+      })
+      gsap.to('.menu-span-bottom', 0.8, {
+        marginTop: 0,
+        ease
+      })
     } else if (!menuIsOpen) {
       gsap.to('body', 0, {
         css: {
@@ -57,6 +65,14 @@ function Header({ history }) {
         backgroundColor: '#000',
         delay: 0.24
       })
+      gsap.to('.menu-span-top', 0.8, {
+        marginBottom: window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
+        ease
+      })
+      gsap.to('.menu-span-bottom', 0.8, {
+        marginTop: window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
+        ease
+      })
     }
   }, [history, menuIsOpen])
 
@@ -72,8 +88,8 @@ function Header({ history }) {
             <Link to="/">BRAGAZZI'S</Link>
           </div>
           <button className="menu-button" onClick={handleMenuClick}>
-            <span></span>
-            <span></span>
+            <span className="menu-span-top"></span>
+            <span className="menu-span-bottom"></span>
           </button>
         </div>
       </div>
