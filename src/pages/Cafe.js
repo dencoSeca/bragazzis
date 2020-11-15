@@ -9,7 +9,7 @@ function Cafe({ openingHours }) {
       <Page title="Cafe">
         <div className="cafe">
           <div className="opening-hours">
-            <h2>OPENING HOURS</h2>
+            <h2>Opening Hours</h2>
             {openingHours.map((data, index) => (
               <p key={index}>{data}</p>
             ))}

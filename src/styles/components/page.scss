@@ -1,8 +1,8 @@
 .page {
   padding-top: 100px;
   .container {
-    width: 100%;
     position: relative;
+    width: 100%;
     .title {
       position: absolute;
       width: 100%;
@@ -38,9 +38,15 @@
       }
     }
     .content {
-      width: 100%;
-      position: absolute;
+      position: relative;
       z-index: 2;
+      top: 96px;
+      @media (max-width: 992px) {
+        top: 48px;
+      }
+      @media (max-width: 760px) {
+        top: 0;
+      }
     }
   }
 }
