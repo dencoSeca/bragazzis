@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './styles/App.scss'
 import { Switch, Route } from 'react-router-dom'
 import gsap from 'gsap'
+import axios from 'axios'
 
 // Components
 import Header from './components/Header'
@@ -25,6 +26,8 @@ function debounce(fn, ms) {
 }
 
 export default function App() {
+  const [openingHours, setOpeningHours] = useState([])
+
   // Prevents flashing
   gsap.to('body', 0, {
     css: {
@@ -57,13 +60,25 @@ export default function App() {
     }
   }, [dimensions])
 
+  useEffect(() => {
+    axios
+      .get(
+        'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyBMnHkqSbbWDI8oipDnotNtzf7AltbSquM&place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text'
+      )
+      .then(response => {
+        setOpeningHours(response.data.result.opening_hours.weekday_text)
+      })
+  }, [])
+
   return (
     <>
       <Header />
       <div className="main">
         <Switch>
           <Route path="/our-story" component={OurStory} />
-          <Route path="/cafe" component={Cafe} />
+          <Route path="/cafe">
+            <Cafe openingHours={openingHours} />
+          </Route>
           <Route path="/shop" component={Shop} />
           <Route path="/events" component={Events} />
           <Route path="/" component={Home} />
