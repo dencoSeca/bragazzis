@@ -6,7 +6,7 @@ import Banner from '../components/Banner'
 import Boxes from '../components/Boxes'
 
 const tl = gsap.timeline()
-const ease = 'power4.easeOut'
+const ease = 'power3.easeOut'
 
 export default function Home() {
   useEffect(() => {
