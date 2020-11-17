@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 
 function Page({ title, children }) {
@@ -14,17 +14,16 @@ function Page({ title, children }) {
     })
   }, [])
 
-  
   return (
     <>
-      <div className="page">
-        <div className="container">
-          <div className="title">
-            <h1>{title}</h1>
+        <div className="page">
+          <div className="container">
+            <div className="title">
+              <h1>{title}</h1>
+            </div>
+            <div className="content">{children}</div>
           </div>
-          <div className="content">{children}</div>
         </div>
-      </div>
     </>
   )
 }
