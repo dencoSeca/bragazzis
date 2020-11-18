@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
+import { motion } from 'framer-motion'
 
 // Assets
 import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
@@ -26,13 +27,40 @@ export default function Banner() {
         <div className="container">
           <h2>
             <div className="line">
-              <span>Purveyors of quality</span>
+              <motion.span
+                initial={{ y: 48, skewY: 4, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  skewY: 0,
+                  opacity: 1,
+                  transition: { delay: 0.3, ease: 'easeOut', duration: 0.7 }
+                }}
+              >
+                Purveyors of quality
+              </motion.span>
             </div>
             <div className="line">
-              <span>Italian goods.</span>
+              <motion.span
+                initial={{ y: 64, skewY: 4, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  skewY: 0,
+                  opacity: 1,
+                  transition: { delay: 0.5, ease: 'easeOut', duration: 0.7 }
+                }}
+              >
+                Italian goods.
+              </motion.span>
             </div>
           </h2>
-          <div className="link">
+          <motion.div
+            className="link"
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 0.5, delay: 1.7, ease: 'easeOut' }
+            }}
+          >
             <Link
               to="/our-story"
               onMouseEnter={handleMouseEnter}
@@ -40,7 +68,7 @@ export default function Banner() {
             >
               Our story <RightArrow />
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

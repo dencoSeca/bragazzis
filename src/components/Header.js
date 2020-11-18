@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { Link, withRouter } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const ease = 'expo.out'
 
 function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
-
-  // Load Animation
-  useEffect(() => {
-    gsap.from('.header', 1, {
-      opacity: 0,
-      ease: ease,
-      delay: 1.6
-    })
-  }, [])
 
   useEffect(() => {
     history.listen(() => {
@@ -66,11 +58,13 @@ function Header({ history }) {
         delay: 0.24
       })
       gsap.to('.menu-span-top', 0.8, {
-        marginBottom: window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
+        marginBottom:
+          window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
         ease
       })
       gsap.to('.menu-span-bottom', 0.8, {
-        marginTop: window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
+        marginTop:
+          window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
         ease
       })
     }
@@ -82,7 +76,14 @@ function Header({ history }) {
 
   return (
     <>
-      <div className="header">
+      <motion.div
+        className="header"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 1.6, duration: 0.5, ease: 'easeOut' }
+        }}
+      >
         <div className="container">
           <div className="logo">
             <Link to="/">BRAGAZZI'S</Link>
@@ -92,7 +93,7 @@ function Header({ history }) {
             <span className="menu-span-bottom"></span>
           </button>
         </div>
-      </div>
+      </motion.div>
       <div className="menu">
         <div className="container">
           <div className="row">

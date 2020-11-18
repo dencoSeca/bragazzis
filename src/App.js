@@ -3,6 +3,7 @@ import './styles/App.scss'
 import { Switch, Route } from 'react-router-dom'
 import gsap from 'gsap'
 import axios from 'axios'
+import { AnimatePresence } from 'framer-motion'
 
 // Components
 import Header from './components/Header'
@@ -72,18 +73,20 @@ export default function App() {
 
   return (
     <>
-      <Header />
-      <div className="main">
-        <Switch>
-          <Route path="/our-story" component={OurStory} />
-          <Route path="/cafe">
-            <Cafe openingHours={openingHours} />
-          </Route>
-          <Route path="/shop" component={Shop} />
-          <Route path="/events" component={Events} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </div>
+      <AnimatePresence exitBeforeEnter>
+        <Header />
+        <div className="main">
+          <Switch>
+            <Route path="/our-story" component={OurStory} />
+            <Route path="/cafe">
+              <Cafe openingHours={openingHours} />
+            </Route>
+            <Route path="/shop" component={Shop} />
+            <Route path="/events" component={Events} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
+      </AnimatePresence>
     </>
   )
 }
