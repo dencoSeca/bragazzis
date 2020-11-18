@@ -6,7 +6,7 @@ import Page from '../components/Page'
 function OurStory() {
   return (
     <>
-      <Page title="Our Story">
+      <Page title={['O', 'u', 'r', 'S', 't', 'o', 'r', 'y']}>
         <div className="our-story">
           <h4>History</h4>
           <p>

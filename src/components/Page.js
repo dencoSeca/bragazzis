@@ -22,7 +22,9 @@ function Page({ title, children }) {
             }}
             transition={{ duration: 0.4, delay: 0.1, ease: ease.smooth }}
           >
-            <h1>{title}</h1>
+            {title.map((letter, i) => (
+              <span key={i}>{letter}</span>
+            ))}
           </motion.div>
           <motion.div
             className="content"
