@@ -36,7 +36,7 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.3, ease: ease.smooth, duration: 0.6 }
+                  transition: { delay: 0.3, ease: ease.smooth, duration: 0.7 }
                 }}
                 exit={{
                   y: -48,
@@ -55,7 +55,7 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.5, ease: ease.smooth, duration: 0.6 }
+                  transition: { delay: 0.5, ease: ease.smooth, duration: 0.7 }
                 }}
                 exit={{
                   y: -48,
