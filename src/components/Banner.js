@@ -33,7 +33,13 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.3, ease: 'easeOut', duration: 0.7 }
+                  transition: { delay: 0.3, ease: 'easeOut', duration: 0.6 }
+                }}
+                exit={{
+                  y: -48,
+                  skewY: -4,
+                  opacity: 0,
+                  transition: { ease: 'easeOut', duration: 0.3 }
                 }}
               >
                 Purveyors of quality
@@ -46,7 +52,13 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.5, ease: 'easeOut', duration: 0.7 }
+                  transition: { delay: 0.5, ease: 'easeOut', duration: 0.6 }
+                }}
+                exit={{
+                  y: -48,
+                  skewY: -4,
+                  opacity: 0,
+                  transition: { delay: 0.2, ease: 'easeOut', duration: 0.3 }
                 }}
               >
                 Italian goods.
@@ -59,6 +71,10 @@ export default function Banner() {
             animate={{
               opacity: 1,
               transition: { duration: 0.5, delay: 1.7, ease: 'easeOut' }
+            }}
+            exit={{
+              opacity: 0,
+              transition: { duration: 0.3, ease: 'easeOut' }
             }}
           >
             <Link

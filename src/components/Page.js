@@ -1,27 +1,41 @@
-import React, { useEffect } from 'react'
-import gsap from 'gsap'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 function Page({ title, children }) {
-  useEffect(() => {
-    gsap.from(['.title', '.content'], 0.8, {
-      delay: 0.2,
-      y: 48,
-      opacity: 0,
-      ease: 'power3.easeOut',
-      stagger: {
-        amount: 0.25
-      }
-    })
-  }, [])
-
   return (
     <>
       <div className="page">
         <div className="container">
-          <div className="title">
+          <motion.div
+            className="title"
+            initial={{ opacity: 0, y: 48 }}
+            animate={{
+              opacity: 1,
+              y: 0
+            }}
+            exit={{
+              opacity: 0,
+              y: -48
+            }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+          >
             <h1>{title}</h1>
-          </div>
-          <div className="content">{children}</div>
+          </motion.div>
+          <motion.div
+            className="content"
+            initial={{ opacity: 0, y: 48 }}
+            animate={{
+              opacity: 1,
+              y: 0
+            }}
+            exit={{
+              opacity: 0,
+              y: -48
+            }}
+            transition={{ duration: 0.6, delay: 0.45, ease: 'easeOut' }}
+          >
+            {children}
+          </motion.div>
         </div>
       </div>
     </>

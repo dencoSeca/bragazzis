@@ -73,20 +73,24 @@ export default function App() {
 
   return (
     <>
-      <AnimatePresence exitBeforeEnter>
-        <Header />
-        <div className="main">
-          <Switch>
-            <Route path="/our-story" component={OurStory} />
-            <Route path="/cafe">
-              <Cafe openingHours={openingHours} />
-            </Route>
-            <Route path="/shop" component={Shop} />
-            <Route path="/events" component={Events} />
-            <Route path="/" component={Home} />
-          </Switch>
-        </div>
-      </AnimatePresence>
+      <Header />
+      <div className="main">
+        <Route
+          render={({ location }) => (
+            <AnimatePresence exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
+                <Route path="/our-story" component={OurStory} />
+                <Route path="/cafe">
+                  <Cafe openingHours={openingHours} />
+                </Route>
+                <Route path="/shop" component={Shop} />
+                <Route path="/events" component={Events} />
+                <Route path="/" component={Home} />
+              </Switch>
+            </AnimatePresence>
+          )}
+        />
+      </div>
     </>
   )
 }
