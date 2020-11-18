@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+// Animations
+import ease from '../styles/animations/ease'
+
 function Page({ title, children }) {
   return (
     <>
@@ -17,7 +20,7 @@ function Page({ title, children }) {
               opacity: 0,
               y: -48
             }}
-            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+            transition={{ duration: 0.3, delay: 0.1, ease: ease.nimble }}
           >
             <h1>{title}</h1>
           </motion.div>
@@ -32,7 +35,7 @@ function Page({ title, children }) {
               opacity: 0,
               y: -48
             }}
-            transition={{ duration: 0.6, delay: 0.45, ease: 'easeOut' }}
+            transition={{ duration: 0.3, delay: 0.2, ease: ease.nimble }}
           >
             {children}
           </motion.div>

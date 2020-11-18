@@ -3,7 +3,8 @@ import gsap from 'gsap'
 import { Link, withRouter } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
-const ease = 'expo.out'
+// Animations
+import ease from '../styles/animations/ease'
 
 function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -21,23 +22,23 @@ function Header({ history }) {
       })
       gsap.to('.main', 0.8, {
         y: window.innerWidth < 760 ? '580px' : '550px',
-        ease: ease
+        ease: 'expo.out'
       })
       gsap.to('.logo a', 0.1, {
         color: '#fff',
-        ease: ease
+        ease: 'expo.out'
       })
       gsap.to('.menu-button span', 0.1, {
         backgroundColor: '#fff',
-        ease: ease
+        ease: 'expo.out'
       })
       gsap.to('.menu-span-top', 0.8, {
         marginBottom: 0,
-        ease
+        ease: 'expo.out'
       })
       gsap.to('.menu-span-bottom', 0.8, {
         marginTop: 0,
-        ease
+        ease: 'expo.out'
       })
     } else if (!menuIsOpen) {
       gsap.to('body', 0, {
@@ -47,7 +48,7 @@ function Header({ history }) {
       })
       gsap.to('.main', 0.8, {
         y: 0,
-        ease: ease
+        ease: 'expo.out'
       })
       gsap.to('.logo a', 0, {
         color: '#000',
@@ -60,12 +61,12 @@ function Header({ history }) {
       gsap.to('.menu-span-top', 0.8, {
         marginBottom:
           window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
-        ease
+        ease: 'expo.out'
       })
       gsap.to('.menu-span-bottom', 0.8, {
         marginTop:
           window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
-        ease
+        ease: 'expo.out'
       })
     }
   }, [history, menuIsOpen])
@@ -81,7 +82,7 @@ function Header({ history }) {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 1.6, duration: 0.5, ease: 'easeOut' }
+          transition: { delay: 1.4, duration: 0.5, ease: ease.smooth }
         }}
       >
         <div className="container">

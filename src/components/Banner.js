@@ -6,6 +6,9 @@ import { motion } from 'framer-motion'
 // Assets
 import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
 
+// Animations
+import ease from '../styles/animations/ease'
+
 function handleMouseEnter() {
   gsap.to('.link a svg', 1, {
     left: 10,
@@ -33,13 +36,13 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.3, ease: 'easeOut', duration: 0.6 }
+                  transition: { delay: 0.3, ease: ease.smooth, duration: 0.6 }
                 }}
                 exit={{
                   y: -48,
                   skewY: -4,
                   opacity: 0,
-                  transition: { ease: 'easeOut', duration: 0.3 }
+                  transition: { ease: ease.smooth, duration: 0.5 }
                 }}
               >
                 Purveyors of quality
@@ -52,13 +55,13 @@ export default function Banner() {
                   y: 0,
                   skewY: 0,
                   opacity: 1,
-                  transition: { delay: 0.5, ease: 'easeOut', duration: 0.6 }
+                  transition: { delay: 0.5, ease: ease.smooth, duration: 0.6 }
                 }}
                 exit={{
                   y: -48,
                   skewY: -4,
                   opacity: 0,
-                  transition: { delay: 0.2, ease: 'easeOut', duration: 0.3 }
+                  transition: { delay: 0.2, ease: ease.smooth, duration: 0.5 }
                 }}
               >
                 Italian goods.
@@ -70,11 +73,11 @@ export default function Banner() {
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
-              transition: { duration: 0.5, delay: 1.7, ease: 'easeOut' }
+              transition: { duration: 0.5, delay: 1.5, ease: ease.smooth }
             }}
             exit={{
               opacity: 0,
-              transition: { duration: 0.3, ease: 'easeOut' }
+              transition: { duration: 0.5, ease: ease.smooth }
             }}
           >
             <Link

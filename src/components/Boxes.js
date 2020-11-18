@@ -7,6 +7,9 @@ import cafeImg from '../assets/images/cafe-full.jpg'
 import shopImg from '../assets/images/shop.jpg'
 import eventsImg from '../assets/images/sandwiches.jpg'
 
+// Animations
+import ease from '../styles/animations/ease'
+
 const boxes = [
   {
     id: 1,
@@ -23,7 +26,7 @@ const boxes = [
       'Seek inspiration from our packed shelves full of fresh food and pantry fillers.',
     image: shopImg,
     path: '/shop',
-    delay: 2
+    delay: 1.9
   },
   {
     id: 3,
@@ -31,7 +34,7 @@ const boxes = [
     tagline: 'We cater for any event that calls for delicious food.',
     image: eventsImg,
     path: '/events',
-    delay: 2.2
+    delay: 2
   }
 ]
 
@@ -50,28 +53,32 @@ export default function Boxes() {
             animate={{
               opacity: 1,
               y: 0,
-              transition: { duration: 0.8, delay: delay, ease: 'easeOut' }
+              transition: { duration: 0.8, delay: delay, ease: ease.smooth }
             }}
             exit={{
               opacity: 0,
-              transition: { duration: 0.3, delay: delay - 1.5, ease: 'easeOut' }
+              transition: {
+                duration: 0.3,
+                delay: delay - 1.5,
+                ease: ease.smooth
+              }
             }}
           >
             <div className="image">
               <motion.img
                 src={image}
                 alt={name}
-                initial={{ scale: 1.4 }}
+                initial={{ scale: 1.3 }}
                 animate={{
                   scale: 1,
-                  transition: { duration: 0.8, delay: delay, ease: 'easeOut' }
+                  transition: { duration: 0.8, delay: delay, ease: ease.smooth }
                 }}
                 exit={{
-                  scale: 0.9,
+                  scale: 1.1,
                   transition: {
                     duration: 0.3,
                     delay: delay - 1.5,
-                    ease: 'easeOut'
+                    ease: ease.smooth
                   }
                 }}
               />
