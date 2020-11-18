@@ -20,7 +20,7 @@ function Page({ title, children }) {
               opacity: 0,
               y: -48
             }}
-            transition={{ duration: 0.3, delay: 0.1, ease: ease.nimble }}
+            transition={{ duration: 0.4, delay: 0.1, ease: ease.smooth }}
           >
             <h1>{title}</h1>
           </motion.div>
@@ -35,7 +35,7 @@ function Page({ title, children }) {
               opacity: 0,
               y: -48
             }}
-            transition={{ duration: 0.3, delay: 0.2, ease: ease.nimble }}
+            transition={{ duration: 0.4, delay: 0.2, ease: ease.smooth }}
           >
             {children}
           </motion.div>
