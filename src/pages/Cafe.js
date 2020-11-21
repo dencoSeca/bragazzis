@@ -6,7 +6,7 @@ import Page from '../components/Page'
 function Cafe({ openingHours }) {
   return (
     <>
-      <Page title={['C', 'a', 'f', 'e']}>
+      <Page title={'Cafe'}>
         <div className="cafe">
           <div className="opening-hours">
             <h2>Opening Hours</h2>

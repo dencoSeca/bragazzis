@@ -9,7 +9,7 @@ function Page({ title, children }) {
     <>
       <div className="page">
         <div className="container">
-          <motion.div
+          <motion.h1
             className="title"
             initial={{ opacity: 0, y: 48 }}
             animate={{
@@ -22,10 +22,8 @@ function Page({ title, children }) {
             }}
             transition={{ duration: 0.4, delay: 0.1, ease: ease.smooth }}
           >
-            {title.map((letter, i) => (
-              <span key={i}>{letter}</span>
-            ))}
-          </motion.div>
+            {title}
+          </motion.h1>
           <motion.div
             className="content"
             initial={{ opacity: 0, y: 48 }}

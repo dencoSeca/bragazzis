@@ -6,7 +6,7 @@ import Page from '../components/Page'
 function Shop() {
   return (
     <>
-      <Page title={['S', 'h', 'o', 'p']}></Page>
+      <Page title={'Shop'}></Page>
     </>
   )
 }

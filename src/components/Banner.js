@@ -39,8 +39,6 @@ export default function Banner() {
                   transition: { delay: 0.3, ease: ease.smooth, duration: 0.7 }
                 }}
                 exit={{
-                  y: -48,
-                  skewY: -4,
                   opacity: 0,
                   transition: { ease: ease.smooth, duration: 0.5 }
                 }}
@@ -58,10 +56,8 @@ export default function Banner() {
                   transition: { delay: 0.5, ease: ease.smooth, duration: 0.7 }
                 }}
                 exit={{
-                  y: -48,
-                  skewY: -4,
                   opacity: 0,
-                  transition: { delay: 0.2, ease: ease.smooth, duration: 0.5 }
+                  transition: { delay: 0.1, ease: ease.smooth, duration: 0.5 }
                 }}
               >
                 Italian goods.
