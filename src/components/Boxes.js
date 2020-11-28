@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 // Assets
-import cafeImg from '../assets/images/cafe-full.jpg'
-import shopImg from '../assets/images/shop.jpg'
-import eventsImg from '../assets/images/sandwiches.jpg'
+import cafeImg from '../assets/images/cafe-03.jpg'
+import shopImg from '../assets/images/shop-05.jpg'
+import eventsImg from '../assets/images/seasons-01.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
