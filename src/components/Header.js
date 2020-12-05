@@ -6,6 +6,20 @@ import { motion } from 'framer-motion'
 // Animations
 import ease from '../styles/animations/ease'
 
+const headerVariants = {
+  initial: {
+    opacity: 0
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 1.4,
+      duration: 0.5,
+      ease: ease.smooth
+    }
+  }
+}
+
 function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
@@ -79,11 +93,9 @@ function Header({ history }) {
     <>
       <motion.div
         className="header"
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 1.4, duration: 0.5, ease: ease.smooth }
-        }}
+        variants={headerVariants}
+        initial="initial"
+        animate="animate"
       >
         <div className="container">
           <div className="logo">
