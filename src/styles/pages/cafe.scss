@@ -1,31 +1,37 @@
 .cafe {
-  .opening-hours {
-    text-align: right;
-    width: 600px;
-    margin: 0 auto;
-    @media (max-width: 992px) {
-      width: 400px;
-    }
-    @media (max-width: 760px) {
-      width: 300px;
-    }
-    h2 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      @media (max-width: 992px) {
-        font-size: 2.2rem;
-      }
-      @media (max-width: 760px) {
-        font-size: 1.4rem;
-      }
-    }
-    p {
-      font-size: 1.4rem;
-      @media (max-width: 992px) {
-        font-size: 1.2rem;
-      }
-      @media (max-width: 760px) {
-        font-size: 0.875rem;
+  .background-image {
+    height: 700px;
+    background-image: url('../../assets/images/cafe-06.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .opening-hours-wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .opening-hours-inner {
+        text-align: right;
+        color: $white;
+        h2 {
+          font-size: 2.6rem;
+          font-weight: 700;
+          @media (max-width: 992px) {
+            font-size: 2.2rem;
+          }
+          @media (max-width: 760px) {
+            font-size: 1.4rem;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          @media (max-width: 992px) {
+            font-size: 1.2rem;
+          }
+          @media (max-width: 760px) {
+            font-size: 0.875rem;
+          }
+        }
       }
     }
   }
