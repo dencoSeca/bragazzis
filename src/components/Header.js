@@ -38,19 +38,19 @@ function Header({ history }) {
         y: window.innerWidth < 760 ? '580px' : '550px',
         ease: 'expo.out'
       })
-      gsap.to('.logo a', 0.1, {
+      gsap.to('.header__logo a', 0.1, {
         color: '#fff',
         ease: 'expo.out'
       })
-      gsap.to('.menu-button span', 0.1, {
+      gsap.to('.header__btn span', 0.1, {
         backgroundColor: '#fff',
         ease: 'expo.out'
       })
-      gsap.to('.menu-span-top', 0.8, {
+      gsap.to('.header__btn-top-span', 0.8, {
         marginBottom: 0,
         ease: 'expo.out'
       })
-      gsap.to('.menu-span-bottom', 0.8, {
+      gsap.to('.header__btn-bottom-span', 0.8, {
         marginTop: 0,
         ease: 'expo.out'
       })
@@ -64,20 +64,20 @@ function Header({ history }) {
         y: 0,
         ease: 'expo.out'
       })
-      gsap.to('.logo a', 0, {
+      gsap.to('.header__logo a', 0, {
         color: '#000',
         delay: 0.24
       })
-      gsap.to('.menu-button span', 0, {
+      gsap.to('.header__btn span', 0, {
         backgroundColor: '#000',
         delay: 0.24
       })
-      gsap.to('.menu-span-top', 0.8, {
+      gsap.to('.header__btn-top-span', 0.8, {
         marginBottom:
           window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
         ease: 'expo.out'
       })
-      gsap.to('.menu-span-bottom', 0.8, {
+      gsap.to('.header__btn-bottom-span', 0.8, {
         marginTop:
           window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
         ease: 'expo.out'
@@ -97,21 +97,21 @@ function Header({ history }) {
         initial="initial"
         animate="animate"
       >
-        <div className="container">
-          <div className="logo">
+        <div className="header__inner container">
+          <div className="header__logo">
             <Link to="/">BRAGAZZI'S</Link>
           </div>
-          <button className="menu-button" onClick={handleMenuClick}>
-            <span className="menu-span-top"></span>
-            <span className="menu-span-bottom"></span>
+          <button className="header__btn" onClick={handleMenuClick}>
+            <span className="header__btn-top-span"></span>
+            <span className="header__btn-bottom-span"></span>
           </button>
         </div>
       </motion.div>
       <div className="menu">
         <div className="container">
           <div className="row">
-            <div className="site-links col-md-5">
-              <ul>
+            <div className="col-md-5">
+              <ul className="menu__links">
                 <li>
                   <Link to="/our-story">Our Story</Link>
                 </li>
@@ -126,15 +126,15 @@ function Header({ history }) {
                 </li>
               </ul>
             </div>
-            <div className="details col-md-7">
-              <div className="card address">
+            <div className="menu__details col-md-7">
+              <div className="menu__details-card address">
                 <h5>Address</h5>
                 <span>224-226 Abbeydale Road</span>
                 <span>Sheffield</span>
                 <span>S7 1FL</span>
                 <span>[google maps link]</span>
               </div>
-              <div className="card contact">
+              <div className="menu__details-card contact">
                 <h5>Get in touch</h5>
                 <span>
                   <a
@@ -149,7 +149,7 @@ function Header({ history }) {
                   <a href="tel:+441142581483">0114 258 1483</a>
                 </span>
               </div>
-              <div className="card social">
+              <div className="menu__details-card social">
                 <h5>Social</h5>
                 <a href="/">
                   <i className="fab fa-facebook"></i>
@@ -161,7 +161,7 @@ function Header({ history }) {
                   <i className="fab fa-tripadvisor"></i>
                 </a>
               </div>
-              <div className="card site-info">
+              <div className="menu__details-card site-info">
                 <h5>Site</h5>
                 <span>&copy; Bragazzis Ltd 2020</span>
                 <span>

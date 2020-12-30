@@ -10,12 +10,12 @@ function OurStory() {
   return (
     <>
       <Page title={'Our Story'}>
-        <div className="our-story">
+        <div className="our-story-screen">
           <div className="row no-gutters">
-            <div className="page-banner col-md-6">
+            <div className="our-story-screen__page-banner col-md-6">
               <img src={pageBanner} alt="" />
             </div>
-            <div className="story col-md-6">
+            <div className="our-story-screen__content col-md-6">
               <h4>History</h4>
               <p>
                 Bragazzi’s opened in Sheffield in 2003, owned by Matteo

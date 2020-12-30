@@ -44,7 +44,7 @@ export default function Boxes() {
       <div className="boxes row no-gutters">
         {boxes.map(({ id, name, tagline, image, path, delay }) => (
           <motion.div
-            className="box col-xl-4"
+            className="boxes__box col-xl-4"
             key={id}
             initial={{
               opacity: 0,
@@ -64,7 +64,7 @@ export default function Boxes() {
               }
             }}
           >
-            <div className="image">
+            <div className="boxes__background-image">
               <motion.img
                 src={image}
                 alt={name}
@@ -83,8 +83,8 @@ export default function Boxes() {
                 }}
               />
             </div>
-            <Link className="content" to={path}>
-              <h4 className="name">{name}</h4>
+            <Link className="boxes__content" to={path}>
+              <h4 className="heading">{name}</h4>
               <span className="tagline">{tagline}</span>
             </Link>
           </motion.div>

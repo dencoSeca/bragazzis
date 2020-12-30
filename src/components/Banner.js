@@ -76,7 +76,7 @@ export default function Banner() {
     <>
       <div className="banner">
         <div className="container">
-          <h2>
+          <h2 className="banner__heading">
             <div className="line">
               <motion.span
                 variants={lineOneVariants}
@@ -99,7 +99,7 @@ export default function Banner() {
             </div>
           </h2>
           <motion.div
-            className="link"
+            className="banner__link"
             variants={linkVariants}
             initial="initial"
             animate="animate"
