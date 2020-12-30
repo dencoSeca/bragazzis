@@ -64,7 +64,7 @@ function Page({ title, children }) {
     <>
       <div className="page">
         <motion.h1
-          className="title"
+          className="page__title"
           variants={titleVariants}
           initial="initial"
           animate="animate"
@@ -73,7 +73,7 @@ function Page({ title, children }) {
           {title}
         </motion.h1>
         <motion.div
-          className="content"
+          className="page__content"
           variants={contentVariants}
           initial="initial"
           animate="animate"
