@@ -84,8 +84,8 @@ export default function Boxes() {
               />
             </div>
             <Link className="boxes__content" to={path}>
-              <h4 className="heading">{name}</h4>
-              <span className="tagline">{tagline}</span>
+              <h4 className="boxes__content-heading">{name}</h4>
+              <span className="boxes__content-tagline">{tagline}</span>
             </Link>
           </motion.div>
         ))}

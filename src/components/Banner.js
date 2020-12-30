@@ -58,14 +58,14 @@ const linkVariants = {
 }
 
 function handleMouseEnter() {
-  gsap.to('.link a svg', 1, {
+  gsap.to('.banner__link a svg', 1, {
     left: 10,
     ease: 'expo.out'
   })
 }
 
 function handleMouseLeave() {
-  gsap.to('.link a svg', 1, {
+  gsap.to('.banner__link a svg', 1, {
     left: 0,
     ease: 'expo.out'
   })
@@ -77,7 +77,7 @@ export default function Banner() {
       <div className="banner">
         <div className="container">
           <h2 className="banner__heading">
-            <div className="line">
+            <div className="banner__heading-line">
               <motion.span
                 variants={lineOneVariants}
                 initial="initial"
@@ -87,7 +87,7 @@ export default function Banner() {
                 Purveyors of quality
               </motion.span>
             </div>
-            <div className="line">
+            <div className="banner__heading-line">
               <motion.span
                 variants={lineTwoVariants}
                 initial="initial"

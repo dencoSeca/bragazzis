@@ -17,16 +17,17 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
-  .line {
-    position: relative;
-    height: 48px;
-    overflow: hidden;
-    @media (max-width: 760px) {
-      height: 32px;
-    }
-    span {
-      position: absolute;
-    }
+}
+
+.banner__heading-line {
+  position: relative;
+  height: 48px;
+  overflow: hidden;
+  @media (max-width: 760px) {
+    height: 32px;
+  }
+  span {
+    position: absolute;
   }
 }
 
