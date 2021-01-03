@@ -57,6 +57,27 @@ const linkVariants = {
   }
 }
 
+const openingHoursVariants = {
+  initial: {
+    opacity: 0
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 1.8,
+      duration: 0.5,
+      ease: ease.smooth
+    }
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+      ease: ease.smooth
+    }
+  }
+}
+
 function handleMouseEnter() {
   gsap.to('.banner__link a svg', 1, {
     left: 10,
@@ -116,11 +137,17 @@ export default function Banner({ openingHours }) {
             </motion.div>
           </div>
           <div className="banner__opening-hours-wrapper col-md-6">
-            <div className="banner__opening-hours-inner">
+            <motion.div
+              className="banner__opening-hours-inner"
+              variants={openingHoursVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
               {openingHours.map((data, index) => (
                 <p key={index}>{data}</p>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
