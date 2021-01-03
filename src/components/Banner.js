@@ -78,20 +78,6 @@ const openingHoursVariants = {
   }
 }
 
-function handleMouseEnter() {
-  gsap.to('.banner__link a svg', 1, {
-    left: 10,
-    ease: 'expo.out'
-  })
-}
-
-function handleMouseLeave() {
-  gsap.to('.banner__link a svg', 1, {
-    left: 0,
-    ease: 'expo.out'
-  })
-}
-
 export default function Banner({ openingHours }) {
   return (
     <>
@@ -129,8 +115,6 @@ export default function Banner({ openingHours }) {
             >
               <Link
                 to="/our-story"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
               >
                 Our story <RightArrow />
               </Link>
