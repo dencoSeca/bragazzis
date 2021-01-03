@@ -52,3 +52,25 @@
     }
   }
 }
+
+.banner__opening-hours-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner__opening-hours-inner {
+  text-align: right;
+  color: $black;
+
+  p {
+    font-size: 1rem;
+    @media (max-width: 992px) {
+      font-size: 0.875rem;
+    }
+    @media (max-width: 760px) {
+      font-size: 0.7rem;
+    }
+  }
+}

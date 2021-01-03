@@ -14,35 +14,3 @@
   opacity: 0.2;
 }
 
-.cafe-screen__opening-hours-wrapper {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.cafe-screen__opening-hours-inner {
-  text-align: right;
-  color: $white;
-
-  h2 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    @media (max-width: 992px) {
-      font-size: 2.2rem;
-    }
-    @media (max-width: 760px) {
-      font-size: 1.4rem;
-    }
-  }
-
-  p {
-    font-size: 1.4rem;
-    @media (max-width: 992px) {
-      font-size: 1.2rem;
-    }
-    @media (max-width: 760px) {
-      font-size: 0.875rem;
-    }
-  }
-}

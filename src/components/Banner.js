@@ -71,48 +71,59 @@ function handleMouseLeave() {
   })
 }
 
-export default function Banner() {
+export default function Banner({openingHours}) {
   return (
     <>
       <div className="banner">
         <div className="banner__inner container">
-          <h2 className="banner__heading">
-            <div className="banner__heading-line">
-              <motion.span
-                variants={lineOneVariants}
+          <div className="row">
+            <div className="banner__heading-wrapper col-md-6">
+              <h2 className="banner__heading">
+                <div className="banner__heading-line">
+                  <motion.span
+                    variants={lineOneVariants}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                  >
+                    Purveyors of quality
+                  </motion.span>
+                </div>
+                <div className="banner__heading-line">
+                  <motion.span
+                    variants={lineTwoVariants}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                  >
+                    Italian goods.
+                  </motion.span>
+                </div>
+              </h2>
+              <motion.div
+                className="banner__link"
+                variants={linkVariants}
                 initial="initial"
                 animate="animate"
                 exit="exit"
               >
-                Purveyors of quality
-              </motion.span>
+                <Link
+                  to="/our-story"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  Our story <RightArrow />
+                </Link>
+              </motion.div>
             </div>
-            <div className="banner__heading-line">
-              <motion.span
-                variants={lineTwoVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-              >
-                Italian goods.
-              </motion.span>
+            <div className="banner__opening-hours-wrapper col-md-6">
+              <div className="banner__opening-hours-inner">
+                {openingHours.map((data, index) => (
+                  <p key={index}>{data}</p>
+                ))}
+              </div>
             </div>
-          </h2>
-          <motion.div
-            className="banner__link"
-            variants={linkVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-          >
-            <Link
-              to="/our-story"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              Our story <RightArrow />
-            </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
     </>

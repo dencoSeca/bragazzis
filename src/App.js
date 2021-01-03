@@ -90,11 +90,11 @@ export default function App() {
           render={({ location }) => (
             <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.key}>
-                <Route exact path="/" component={Home} />
-                <Route path="/our-story" component={OurStory} />
-                <Route path="/cafe">
-                  <Cafe openingHours={openingHours} />
+                <Route exact path="/">
+                  <Home openingHours={openingHours} />
                 </Route>
+                <Route path="/our-story" component={OurStory} />
+                <Route path="/cafe" component={Cafe} />
                 <Route path="/shop" component={Shop} />
                 <Route path="/events" component={Events} />
               </Switch>

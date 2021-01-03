@@ -4,10 +4,10 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Boxes from '../components/Boxes'
 
-export default function Home() {
+export default function Home({openingHours}) {
   return (
     <>
-      <Banner />
+      <Banner openingHours={openingHours} />
       <Boxes />
     </>
   )
