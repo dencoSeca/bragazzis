@@ -15,16 +15,6 @@ import Cafe from './pages/Cafe'
 import Shop from './pages/Shop'
 import Events from './pages/Events'
 
-const defaultOpeningHours = [
-  'Monday: 9.00 am - 4.30 pm',
-  'Tuesday: 9.00 am - 4.30 pm',
-  'Wednesday: 9.00 am - 4 pm',
-  'Thursday: 9.00 am - 4.30 pm',
-  'Friday: 9.00 am - 4.30 pm',
-  'Saturday: 9.00 am - 4.30 pm',
-  'Sunday: 10.00 am - 3.00 pm'
-]
-
 function debounce(fn, ms) {
   let timer
   return () => {
@@ -37,7 +27,7 @@ function debounce(fn, ms) {
 }
 
 export default function App() {
-  const [openingHours, setOpeningHours] = useState([])
+  const [openingHours, setOpeningHours] = useState(['Updating opening hours...'])
 
   // Prevents flashing
   gsap.to('body', 0, {
@@ -79,7 +69,7 @@ export default function App() {
       .then(response => {
         setOpeningHours(response.data.result.opening_hours.weekday_text)
       })
-      .catch(() => setOpeningHours(defaultOpeningHours))
+      .catch(() => setOpeningHours(['Error loading opening hours']))
   }, [])
 
   return (
