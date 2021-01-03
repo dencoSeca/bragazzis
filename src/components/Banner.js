@@ -75,7 +75,7 @@ export default function Banner() {
   return (
     <>
       <div className="banner">
-        <div className="container">
+        <div className="banner__inner container">
           <h2 className="banner__heading">
             <div className="banner__heading-line">
               <motion.span

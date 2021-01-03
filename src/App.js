@@ -16,13 +16,13 @@ import Shop from './pages/Shop'
 import Events from './pages/Events'
 
 const defaultOpeningHours = [
-  'MONDAY: 9AM - 4.30PM',
-  'TUESDAY: 9AM - 4.30PM',
-  'WEDNESDAY: 9AM - 4PM',
-  'THURSDAY: 9AM - 4.30PM',
-  'FRIDAY: 9AM - 4.30PM',
-  'SATURDAY: 9AM - 4.30PM',
-  'SUNDAY: 10AM - 3PM'
+  'Monday: 9.00 am - 4.30 pm',
+  'Tuesday: 9.00 am - 4.30 pm',
+  'Wednesday: 9.00 am - 4 pm',
+  'Thursday: 9.00 am - 4.30 pm',
+  'Friday: 9.00 am - 4.30 pm',
+  'Saturday: 9.00 am - 4.30 pm',
+  'Sunday: 10.00 am - 3.00 pm'
 ]
 
 function debounce(fn, ms) {
@@ -90,13 +90,13 @@ export default function App() {
           render={({ location }) => (
             <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={location.key}>
+                <Route exact path="/" component={Home} />
                 <Route path="/our-story" component={OurStory} />
                 <Route path="/cafe">
                   <Cafe openingHours={openingHours} />
                 </Route>
                 <Route path="/shop" component={Shop} />
                 <Route path="/events" component={Events} />
-                <Route path="/" component={Home} />
               </Switch>
             </AnimatePresence>
           )}
