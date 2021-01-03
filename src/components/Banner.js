@@ -75,7 +75,7 @@ export default function Banner({ openingHours }) {
   return (
     <>
       <div className="container">
-        <div className="banner__wrapper row">
+        <div className="banner row">
           <div className="banner__heading-wrapper col-md-6">
             <h2 className="banner__heading">
               <div className="banner__heading-line">
