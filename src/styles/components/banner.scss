@@ -58,18 +58,22 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (max-width: 760px) {
+    justify-content: flex-start;
+  }
 }
 
 .banner__opening-hours-inner {
-  text-align: right;
   color: $black;
 
   p {
+    text-align: right;
     font-size: 1rem;
     @media (max-width: 992px) {
       font-size: 0.875rem;
     }
     @media (max-width: 760px) {
+      text-align: left;
       font-size: 0.7rem;
     }
   }
