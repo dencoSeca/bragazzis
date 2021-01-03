@@ -1,10 +1,9 @@
-.banner {
+.banner__wrapper {
   height: 50vh;
   height: calc(var(--vh, 1vh) * 50);
 }
 
-.banner__inner {
-  width: 100%;
+.banner__heading-wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
