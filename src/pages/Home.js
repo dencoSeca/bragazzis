@@ -7,8 +7,8 @@ import Boxes from '../components/Boxes'
 export default function Home({openingHours}) {
   return (
     <>
-      <Banner openingHours={openingHours} />
-      <Boxes />
+      <Banner />
+      <Boxes openingHours={openingHours} />
     </>
   )
 }

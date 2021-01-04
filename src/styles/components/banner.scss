@@ -5,6 +5,7 @@
 
 .banner__heading-wrapper {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,28 +53,3 @@
   }
 }
 
-.banner__opening-hours-wrapper {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  @media (max-width: 760px) {
-    justify-content: flex-start;
-  }
-}
-
-.banner__opening-hours-inner {
-  color: $black;
-
-  p {
-    text-align: right;
-    font-size: 1rem;
-    @media (max-width: 992px) {
-      font-size: 0.875rem;
-    }
-    @media (max-width: 760px) {
-      text-align: left;
-      font-size: 0.7rem;
-    }
-  }
-}

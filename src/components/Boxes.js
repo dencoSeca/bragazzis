@@ -10,7 +10,7 @@ import openingHoursImg from '../assets/images/cafe-06.jpg'
 // Animations
 import ease from '../styles/animations/ease'
 
-export default function Boxes() {
+export default function Boxes({ openingHours }) {
   return (
     <>
       <div className="boxes row no-gutters">
@@ -102,7 +102,8 @@ export default function Boxes() {
           <Link className="boxes__content" to="/shop">
             <h4 className="boxes__content-heading">Shop</h4>
             <span className="boxes__content-tagline">
-              Roam freely & find inspiration, or that obscure pasta shape that you've been looking for.
+              Roam freely & find inspiration, or that obscure pasta shape that
+              you've been looking for.
             </span>
           </Link>
         </motion.div>
@@ -145,7 +146,15 @@ export default function Boxes() {
               }}
             />
           </div>
-          
+          <div className="boxes__content">
+            <div className="boxes__opening-hours-wrapper">
+              {openingHours.map((data, index) => (
+                <p className="boxes__opening-hours-line" key={index}>
+                  {data}
+                </p>
+              ))}
+            </div>
+          </div>
         </motion.div>
       </div>
     </>

@@ -57,82 +57,44 @@ const linkVariants = {
   }
 }
 
-const openingHoursVariants = {
-  initial: {
-    opacity: 0
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      delay: 1.8,
-      duration: 0.7,
-      ease: ease.smooth
-    }
-  },
-  exit: {
-    opacity: 0,
-    transition: {
-      duration: 0.5,
-      ease: ease.smooth
-    }
-  }
-}
-
-export default function Banner({ openingHours }) {
+export default function Banner() {
   return (
     <>
-      <div className="container">
-        <div className="banner row">
-          <div className="banner__heading-wrapper col-md-6">
-            <h2 className="banner__heading">
-              <div className="banner__heading-line">
-                <motion.span
-                  variants={lineOneVariants}
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                >
-                  Purveyors of quality
-                </motion.span>
-              </div>
-              <div className="banner__heading-line">
-                <motion.span
-                  variants={lineTwoVariants}
-                  initial="initial"
-                  animate="animate"
-                  exit="exit"
-                >
-                  Italian goods.
-                </motion.span>
-              </div>
-            </h2>
-            <motion.div
-              className="banner__link"
-              variants={linkVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <Link
-                to="/our-story"
+      <div className="banner container">
+        <div className="banner__heading-wrapper">
+          <h2 className="banner__heading">
+            <div className="banner__heading-line">
+              <motion.span
+                variants={lineOneVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
               >
-                Our story <RightArrow />
-              </Link>
-            </motion.div>
-          </div>
-          <div className="banner__opening-hours-wrapper col-md-6">
-            <motion.div
-              className="banner__opening-hours-inner"
-              variants={openingHoursVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              {openingHours.map((data, index) => (
-                <p key={index}>{data}</p>
-              ))}
-            </motion.div>
-          </div>
+                Purveyors of quality
+              </motion.span>
+            </div>
+            <div className="banner__heading-line">
+              <motion.span
+                variants={lineTwoVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                Italian goods.
+              </motion.span>
+            </div>
+          </h2>
+          <motion.div
+            className="banner__link"
+            variants={linkVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            <Link to="/our-story">
+              Our story <RightArrow />
+            </Link>
+          </motion.div>
         </div>
       </div>
     </>
