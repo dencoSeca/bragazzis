@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 // Assets
 import cafeImg from '../assets/images/cafe-03.jpg'
 import shopImg from '../assets/images/shop-05.jpg'
-import eventsImg from '../assets/images/seasons-01.jpg'
+import eventsImg from '../assets/images/cafe-06.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
@@ -14,7 +14,7 @@ const boxes = [
   {
     id: 1,
     name: 'Cafe',
-    tagline: 'Grab a sandwich, coffee and a sweet treat.',
+    tagline: 'Sandwich, caffé & pasticcini.',
     image: cafeImg,
     path: '/cafe',
     delay: 1.8
@@ -23,7 +23,7 @@ const boxes = [
     id: 2,
     name: 'Shop',
     tagline:
-      'Seek inspiration from our packed shelves full of fresh food and pantry fillers.',
+      "Roam freely & find inspiration, or that obscure pasta shape that you've been looking for.",
     image: shopImg,
     path: '/shop',
     delay: 1.9
