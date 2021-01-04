@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import gsap from 'gsap'
 import { motion } from 'framer-motion'
 
 // Assets
