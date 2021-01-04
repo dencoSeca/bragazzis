@@ -36,7 +36,7 @@ export default function Boxes({ openingHours }) {
         >
           <div className="boxes__background-image">
             <motion.img
-              src={cafeImg}
+              src={openingHoursImg}
               alt="cafe scene"
               initial={{ scale: 1.3 }}
               animate={{
@@ -53,12 +53,16 @@ export default function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <Link className="boxes__content" to="/cafe">
-            <h4 className="boxes__content-heading">Cafe</h4>
-            <span className="boxes__content-tagline">
-              Sandwich, caffé & pasticcini.
-            </span>
-          </Link>
+          <div className="boxes__content">
+            <h4 className="boxes__content-heading">Opening Hours</h4>
+            <div className="boxes__opening-hours-wrapper">
+              {openingHours.map((data, index) => (
+                <p className="boxes__opening-hours-line" key={index}>
+                  {data}
+                </p>
+              ))}
+            </div>
+          </div>
         </motion.div>
         <motion.div
           className="boxes__box col-xl-4"
@@ -129,7 +133,7 @@ export default function Boxes({ openingHours }) {
         >
           <div className="boxes__background-image">
             <motion.img
-              src={openingHoursImg}
+              src={cafeImg}
               alt="cafe scene"
               initial={{ scale: 1.3 }}
               animate={{
@@ -146,16 +150,12 @@ export default function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <div className="boxes__content">
-            <h4 className="boxes__content-heading">Opening Hours</h4>
-            <div className="boxes__opening-hours-wrapper">
-              {openingHours.map((data, index) => (
-                <p className="boxes__opening-hours-line" key={index}>
-                  {data}
-                </p>
-              ))}
-            </div>
-          </div>
+          <Link className="boxes__content" to="/cafe">
+            <h4 className="boxes__content-heading">Cafe</h4>
+            <span className="boxes__content-tagline">
+              Sandwich, caffé & pasticcini.
+            </span>
+          </Link>
         </motion.div>
       </div>
     </>
