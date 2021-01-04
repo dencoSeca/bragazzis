@@ -147,6 +147,7 @@ export default function Boxes({ openingHours }) {
             />
           </div>
           <div className="boxes__content">
+            <h4 className="boxes__content-heading">Opening Hours</h4>
             <div className="boxes__opening-hours-wrapper">
               {openingHours.map((data, index) => (
                 <p className="boxes__opening-hours-line" key={index}>
