@@ -5,90 +5,148 @@ import { motion } from 'framer-motion'
 // Assets
 import cafeImg from '../assets/images/cafe-03.jpg'
 import shopImg from '../assets/images/shop-05.jpg'
-import eventsImg from '../assets/images/cafe-06.jpg'
+import openingHoursImg from '../assets/images/cafe-06.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
-
-const boxes = [
-  {
-    id: 1,
-    name: 'Cafe',
-    tagline: 'Sandwich, caffé & pasticcini.',
-    image: cafeImg,
-    path: '/cafe',
-    delay: 1.8
-  },
-  {
-    id: 2,
-    name: 'Shop',
-    tagline:
-      "Roam freely & find inspiration, or that obscure pasta shape that you've been looking for.",
-    image: shopImg,
-    path: '/shop',
-    delay: 1.9
-  },
-  {
-    id: 3,
-    name: 'Events',
-    tagline: 'We cater for any event that calls for delicious food.',
-    image: eventsImg,
-    path: '/events',
-    delay: 2
-  }
-]
 
 export default function Boxes() {
   return (
     <>
       <div className="boxes row no-gutters">
-        {boxes.map(({ id, name, tagline, image, path, delay }) => (
-          <motion.div
-            className="boxes__box col-xl-4"
-            key={id}
-            initial={{
-              opacity: 0,
-              y: 200
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 0.8, delay: delay, ease: ease.smooth }
-            }}
-            exit={{
-              opacity: 0,
-              transition: {
-                duration: 0.3,
-                delay: delay - 1.5,
-                ease: ease.smooth
-              }
-            }}
-          >
-            <div className="boxes__background-image">
-              <motion.img
-                src={image}
-                alt={name}
-                initial={{ scale: 1.3 }}
-                animate={{
-                  scale: 1,
-                  transition: { duration: 0.8, delay: delay, ease: ease.smooth }
-                }}
-                exit={{
-                  scale: 1.1,
-                  transition: {
-                    duration: 0.3,
-                    delay: delay - 1.5,
-                    ease: ease.smooth
-                  }
-                }}
-              />
-            </div>
-            <Link className="boxes__content" to={path}>
-              <h4 className="boxes__content-heading">{name}</h4>
-              <span className="boxes__content-tagline">{tagline}</span>
-            </Link>
-          </motion.div>
-        ))}
+        <motion.div
+          className="boxes__box col-xl-4"
+          initial={{
+            opacity: 0,
+            y: 200
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, delay: 1.8, ease: ease.smooth }
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.3,
+              delay: 0.3,
+              ease: ease.smooth
+            }
+          }}
+        >
+          <div className="boxes__background-image">
+            <motion.img
+              src={cafeImg}
+              alt="cafe scene"
+              initial={{ scale: 1.3 }}
+              animate={{
+                scale: 1,
+                transition: { duration: 0.8, delay: 1.8, ease: ease.smooth }
+              }}
+              exit={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.3,
+                  delay: 0.3,
+                  ease: ease.smooth
+                }
+              }}
+            />
+          </div>
+          <Link className="boxes__content" to="/cafe">
+            <h4 className="boxes__content-heading">Cafe</h4>
+            <span className="boxes__content-tagline">
+              Sandwich, caffé & pasticcini.
+            </span>
+          </Link>
+        </motion.div>
+        <motion.div
+          className="boxes__box col-xl-4"
+          initial={{
+            opacity: 0,
+            y: 200
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, delay: 1.9, ease: ease.smooth }
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.3,
+              delay: 0.4,
+              ease: ease.smooth
+            }
+          }}
+        >
+          <div className="boxes__background-image">
+            <motion.img
+              src={shopImg}
+              alt="cafe scene"
+              initial={{ scale: 1.3 }}
+              animate={{
+                scale: 1,
+                transition: { duration: 0.8, delay: 1.9, ease: ease.smooth }
+              }}
+              exit={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.3,
+                  delay: 0.4,
+                  ease: ease.smooth
+                }
+              }}
+            />
+          </div>
+          <Link className="boxes__content" to="/shop">
+            <h4 className="boxes__content-heading">Shop</h4>
+            <span className="boxes__content-tagline">
+              Roam freely & find inspiration, or that obscure pasta shape that you've been looking for.
+            </span>
+          </Link>
+        </motion.div>
+        <motion.div
+          className="boxes__box col-xl-4"
+          initial={{
+            opacity: 0,
+            y: 200
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, delay: 2, ease: ease.smooth }
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.3,
+              delay: 0.5,
+              ease: ease.smooth
+            }
+          }}
+        >
+          <div className="boxes__background-image">
+            <motion.img
+              src={openingHoursImg}
+              alt="cafe scene"
+              initial={{ scale: 1.3 }}
+              animate={{
+                scale: 1,
+                transition: { duration: 0.8, delay: 2, ease: ease.smooth }
+              }}
+              exit={{
+                scale: 1.1,
+                transition: {
+                  duration: 0.3,
+                  delay: 0.5,
+                  ease: ease.smooth
+                }
+              }}
+            />
+          </div>
+          
+        </motion.div>
       </div>
     </>
   )
