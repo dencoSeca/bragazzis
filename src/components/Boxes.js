@@ -11,19 +11,17 @@ import openingHoursImg from '../assets/images/cafe-06.jpg'
 import ease from '../styles/animations/ease'
 
 const boxesContainerVariants = {
-  initial: {
-    opacity: 1
-  },
   animate: {
-    opacity: 1,
-    duration: 0,
     transition: {
       delayChildren: 1.8,
       staggerChildren: 0.1
     }
   },
   exit: {
-    opacity: 1
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.1
+    }
   }
 }
 
@@ -41,7 +39,6 @@ const boxVariants = {
     opacity: 0,
     transition: {
       duration: 0.3,
-      delay: 0.3,
       ease: ease.smooth
     }
   }
@@ -55,6 +52,7 @@ export default function Boxes({ openingHours }) {
         variants={boxesContainerVariants}
         initial="initial"
         animate="animate"
+        exit="exit"
       >
         <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
           <div className="boxes__background-image">
