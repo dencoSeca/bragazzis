@@ -106,7 +106,7 @@ export default function Boxes({ openingHours }) {
           <Link className="boxes__content" to="/shop">
             <h4 className="boxes__content-heading">Shop</h4>
             <span className="boxes__content-tagline">
-              Roam freely & find inspiration, or that obscure pasta shape that
+              Roam freely & find inspiration... or that obscure pasta shape that
               you've been looking for.
             </span>
           </Link>

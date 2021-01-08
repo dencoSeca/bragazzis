@@ -13,7 +13,7 @@ import Home from './pages/Home'
 import OurStory from './pages/OurStory'
 import Cafe from './pages/Cafe'
 import Shop from './pages/Shop'
-import Events from './pages/Events'
+import Seasons from './pages/Seasons'
 
 function debounce(fn, ms) {
   let timer
@@ -86,7 +86,7 @@ export default function App() {
                 <Route path="/our-story" component={OurStory} />
                 <Route path="/cafe" component={Cafe} />
                 <Route path="/shop" component={Shop} />
-                <Route path="/events" component={Events} />
+                <Route path="/seasons" component={Seasons} />
               </Switch>
             </AnimatePresence>
           )}
