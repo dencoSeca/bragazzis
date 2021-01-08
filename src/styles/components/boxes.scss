@@ -67,16 +67,15 @@
 }
 
 .boxes__opening-hours-line {
-  text-align: left;
   padding-right: 48px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: $white;
   margin: 0.875rem 0;
   @media (max-width: 992px) {
-    font-size: 1.4rem;
+    font-size: 0.6rem;
   }
   @media (max-width: 760px) {
-    font-size: 0.875rem;
+    font-size: 0.5rem;
   }
 }

@@ -15,6 +15,16 @@ import Cafe from './pages/Cafe'
 import Shop from './pages/Shop'
 import Seasons from './pages/Seasons'
 
+const defaultOpeningHours = [
+  'Munday: 9.30AM - 4.30PM',
+  'Twosday: 9.30AM - 4.30PM',
+  'Wendsday: 9.30AM - 4.30PM',
+  'Thersday: 9.30AM - 4.30PM',
+  'Fryday: 9.30AM - 4.30PM',
+  'Saterday: 9.30AM - 4.30PM',
+  'Sonday: 9.30AM - 4.30PM',
+]
+
 function debounce(fn, ms) {
   let timer
   return () => {
@@ -69,7 +79,7 @@ export default function App() {
       .then(response => {
         setOpeningHours(response.data.result.opening_hours.weekday_text)
       })
-      .catch(() => setOpeningHours(['Error loading opening hours']))
+      .catch(() => setOpeningHours(defaultOpeningHours))
   }, [])
 
   return (
