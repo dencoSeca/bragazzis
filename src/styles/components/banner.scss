@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   @media (max-width: 760px) {
-   padding-left: 33px; 
+    padding: 0 9px;
   }
 }
 
@@ -18,8 +18,8 @@
   font-size: 2.4rem;
   line-height: 2.9rem;
   @media (max-width: 760px) {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
   }
 }
 
