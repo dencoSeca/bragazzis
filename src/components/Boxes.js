@@ -10,6 +10,9 @@ import stagioniImg from '../assets/images/stagioni-01.jpg'
 // Animations
 import ease from '../styles/animations/ease'
 
+// =========================
+// Motion component configs
+// =========================
 const boxesContainerVariants = {
   animate: {
     transition: {
@@ -44,7 +47,7 @@ const boxVariants = {
   }
 }
 
-export default function Boxes({ openingHours }) {
+function Boxes({ openingHours }) {
   return (
     <>
       <motion.div
@@ -147,3 +150,5 @@ export default function Boxes({ openingHours }) {
     </>
   )
 }
+
+export default Boxes

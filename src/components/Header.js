@@ -6,6 +6,9 @@ import { motion } from 'framer-motion'
 // Animations
 import ease from '../styles/animations/ease'
 
+// =========================
+// Motion component configs
+// =========================
 const headerVariants = {
   initial: {
     opacity: 0
@@ -24,6 +27,9 @@ function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
   const [isBtnDisabled, setIsBtnDisabled] = useState(false)
 
+  // ============================
+  // Menu open / close animation
+  // ============================
   useEffect(() => {
     history.listen(() => {
       setMenuIsOpen(false)

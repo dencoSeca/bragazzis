@@ -8,6 +8,9 @@ import { ReactComponent as RightArrow } from '../assets/arrow-right.svg'
 // Animations
 import ease from '../styles/animations/ease'
 
+// =========================
+// Motion component configs
+// =========================
 const lineOneVariants = {
   initial: {
     y: 48,
@@ -56,7 +59,7 @@ const linkVariants = {
   }
 }
 
-export default function Banner() {
+function Banner() {
   return (
     <>
       <div className="banner container">
@@ -99,3 +102,5 @@ export default function Banner() {
     </>
   )
 }
+
+export default Banner

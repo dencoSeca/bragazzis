@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 // Animations
 import ease from '../styles/animations/ease'
 
+// =========================
+// Motion component configs
+// =========================
 const titleVariants = {
   initial: {
     opacity: 0,

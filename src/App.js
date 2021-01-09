@@ -35,25 +35,30 @@ function debounce(fn, ms) {
   }
 }
 
-export default function App() {
+function App() {
   const [openingHours, setOpeningHours] = useState([
     'Updating opening hours...'
   ])
 
-  // Prevents flashing
+  // =================
+  // Prevent flashing
+  // =================
   gsap.to('body', 0, {
     css: {
       visibility: 'visible'
     }
   })
 
+  // =========================================
+  // Set new vh in css when window is resized
+  // =========================================
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
 
   useEffect(() => {
-    // Grab inner height of window for mobile reasons when dealing with vh
+    // Grab inner height of window
     let vh = dimensions.height * 0.01
     // Set css variable vh
     document.documentElement.style.setProperty('--vh', `${vh}px`)
@@ -72,6 +77,9 @@ export default function App() {
     }
   }, [dimensions])
 
+  // ===========================================
+  // Fetch opening hours from Google Places API
+  // ===========================================
   useEffect(() => {
     function getOpeningHours() {
       fetch(
@@ -112,3 +120,5 @@ export default function App() {
     </>
   )
 }
+
+export default App

@@ -44,3 +44,5 @@ function Cafe({ openingHours }) {
 }
 
 export default Cafe
+
+
