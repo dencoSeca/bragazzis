@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './styles/App.scss'
 import { Switch, Route } from 'react-router-dom'
 import gsap from 'gsap'
-import axios from 'axios'
 import { AnimatePresence } from 'framer-motion'
 
 // Components
@@ -22,7 +21,7 @@ const defaultOpeningHours = [
   'Thersday: 9.30AM - 4.30PM',
   'Fryday: 9.30AM - 4.30PM',
   'Saterday: 9.30AM - 4.30PM',
-  'Sonday: 9.30AM - 4.30PM',
+  'Sonday: 9.30AM - 4.30PM'
 ]
 
 function debounce(fn, ms) {
@@ -37,7 +36,9 @@ function debounce(fn, ms) {
 }
 
 export default function App() {
-  const [openingHours, setOpeningHours] = useState(['Updating opening hours...'])
+  const [openingHours, setOpeningHours] = useState([
+    'Updating opening hours...'
+  ])
 
   // Prevents flashing
   gsap.to('body', 0, {
@@ -72,14 +73,20 @@ export default function App() {
   }, [dimensions])
 
   useEffect(() => {
-    axios
-      .get(
+    function getOpeningHours() {
+      fetch(
         'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyBMnHkqSbbWDI8oipDnotNtzf7AltbSquM&place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text'
       )
-      .then(response => {
-        setOpeningHours(response.data.result.opening_hours.weekday_text)
-      })
-      .catch(() => setOpeningHours(defaultOpeningHours))
+        .then(res => res.json())
+        .then(parsed => {
+          setOpeningHours(parsed.result.opening_hours.weekday_text)
+        })
+        .catch(() => {
+          console.error('Cannot fetch opening hours from Places API')
+          setOpeningHours(defaultOpeningHours)
+        })
+    }
+    getOpeningHours()
   }, [])
 
   return (
