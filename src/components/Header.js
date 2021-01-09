@@ -128,7 +128,7 @@ function Header({ history }) {
                   <Link to="/shop">Shop</Link>
                 </li>
                 <li>
-                  <Link to="/seasons">Seasons</Link>
+                  <Link to="/stagioni">Stagioni</Link>
                 </li>
               </ul>
             </div>
