@@ -22,12 +22,13 @@ const headerVariants = {
 
 function Header({ history }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const [isBtnDisabled, setIsBtnDisabled] = useState(false)
 
   useEffect(() => {
     history.listen(() => {
       setMenuIsOpen(false)
     })
-
+    setIsBtnDisabled(true)
     if (menuIsOpen) {
       gsap.to('body', 0, {
         css: {
@@ -83,6 +84,7 @@ function Header({ history }) {
         ease: 'expo.out'
       })
     }
+    setIsBtnDisabled(false)
   }, [history, menuIsOpen])
 
   function handleMenuClick() {
@@ -101,7 +103,11 @@ function Header({ history }) {
           <div className="header__logo">
             <Link to="/">BRAGAZZI'S</Link>
           </div>
-          <button className="header__btn" onClick={handleMenuClick}>
+          <button
+            className="header__btn"
+            onClick={handleMenuClick}
+            disabled={isBtnDisabled}
+          >
             <span className="header__btn-top-span"></span>
             <span className="header__btn-bottom-span"></span>
           </button>
