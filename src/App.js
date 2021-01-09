@@ -81,20 +81,17 @@ function App() {
   // Fetch opening hours from Google Places API
   // ===========================================
   useEffect(() => {
-    function getOpeningHours() {
-      fetch(
-        'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyBMnHkqSbbWDI8oipDnotNtzf7AltbSquM&place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text'
-      )
-        .then(res => res.json())
-        .then(parsed => {
-          setOpeningHours(parsed.result.opening_hours.weekday_text)
-        })
-        .catch(() => {
-          console.error('Cannot fetch opening hours from Places API')
-          setOpeningHours(defaultOpeningHours)
-        })
-    }
-    getOpeningHours()
+    fetch(
+      'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyBMnHkqSbbWDI8oipDnotNtzf7AltbSquM&place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text'
+    )
+      .then(res => res.json())
+      .then(parsed => {
+        setOpeningHours(parsed.result.opening_hours.weekday_text)
+      })
+      .catch(() => {
+        console.error('Cannot fetch opening hours from Places API')
+        setOpeningHours(defaultOpeningHours)
+      })
   }, [])
 
   return (
