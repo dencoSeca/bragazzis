@@ -129,7 +129,7 @@ function Header({ history }) {
             <div className="menu__details col-md-7">
               <div className="menu__details-card address">
                 <h5>Address</h5>
-                <span>224-226 Abbeydale Road</span>
+                <span>224-228 Abbeydale Road</span>
                 <span>Sheffield</span>
                 <span>S7 1FL</span>
                 <span>[google maps link]</span>

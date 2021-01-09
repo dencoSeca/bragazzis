@@ -16,7 +16,7 @@ import Shop from './pages/Shop'
 import Seasons from './pages/Seasons'
 
 const defaultOpeningHours = [
-  'Munday: 9.30AM - 4.30PM',
+  'Monday: 9.30AM - 4.30PM',
   'Twosday: 9.30AM - 4.30PM',
   'Wendsday: 9.30AM - 4.30PM',
   'Thersday: 9.30AM - 4.30PM',
