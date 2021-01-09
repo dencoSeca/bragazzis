@@ -13,7 +13,7 @@ import Home from './pages/Home'
 import OurStory from './pages/OurStory'
 import Cafe from './pages/Cafe'
 import Shop from './pages/Shop'
-import Seasons from './pages/Seasons'
+import Stagioni from './pages/Stagioni'
 
 const defaultOpeningHours = [
   'Monday: 9.30AM - 4.30PM',
@@ -96,7 +96,7 @@ export default function App() {
                 <Route path="/our-story" component={OurStory} />
                 <Route path="/cafe" component={Cafe} />
                 <Route path="/shop" component={Shop} />
-                <Route path="/seasons" component={Seasons} />
+                <Route path="/stagioni" component={Stagioni} />
               </Switch>
             </AnimatePresence>
           )}

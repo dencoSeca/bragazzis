@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 // Assets
-import cafeImg from '../assets/images/cafe-03.jpg'
+import cafeImg from '../assets/images/cafe-06.jpg'
 import shopImg from '../assets/images/shop-05.jpg'
-import openingHoursImg from '../assets/images/cafe-06.jpg'
+import stagioniImg from '../assets/images/stagioni-01.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
@@ -57,7 +57,7 @@ export default function Boxes({ openingHours }) {
         <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
-              src={openingHoursImg}
+              src={cafeImg}
               alt="cafe scene"
               initial={{ scale: 1.3 }}
               animate={{
@@ -74,10 +74,10 @@ export default function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <div className="boxes__content">
+          <Link className="boxes__content" to="/cafe">
             <h4 className="boxes__content-heading">Cafe</h4>
             <span className="boxes__content-tagline">
-              Sandwich, caffé & pasticcini.
+              Panini, caffé & pasticcini.
             </span>
             <div className="boxes__opening-hours-wrapper">
               {openingHours.map((data, index) => (
@@ -86,7 +86,7 @@ export default function Boxes({ openingHours }) {
                 </p>
               ))}
             </div>
-          </div>
+          </Link>
         </motion.div>
         <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
           <div className="boxes__background-image">
@@ -119,7 +119,7 @@ export default function Boxes({ openingHours }) {
         <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
-              src={cafeImg}
+              src={stagioniImg}
               alt="cafe scene"
               initial={{ scale: 1.3 }}
               animate={{
@@ -136,8 +136,8 @@ export default function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <Link className="boxes__content" to="/cafe">
-            <h4 className="boxes__content-heading">Cafe</h4>
+          <Link className="boxes__content" to="/stagioni">
+            <h4 className="boxes__content-heading">Stagioni</h4>
             <span className="boxes__content-tagline">
               Sandwich, caffé & pasticcini.
             </span>

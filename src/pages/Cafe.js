@@ -7,8 +7,7 @@ function Cafe({ openingHours }) {
   return (
     <>
       <Page title={'Cafe'}>
-        <div className="cafe-screen__background-image">
-          <div className="cafe-screen__background-image__tint"></div>
+        <div className="container">
           <p>
             We use our own carefully curated blend roasted by Darkwoods coffee,
             West Yorkshire. We only use specialty graded coffee, which has a
