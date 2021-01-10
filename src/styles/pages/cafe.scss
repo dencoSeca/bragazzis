@@ -1,0 +1,21 @@
+.conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  margin-bottom: 64px;
+}
+
+.conversation__line {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.conversation__left-wrapper {
+  margin-left: 156px;
+}
+
+.conversation__right-wrapper {
+  margin-right: 156px;
+  margin-left: auto;
+}
