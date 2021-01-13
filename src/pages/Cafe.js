@@ -6,7 +6,7 @@ import Page from '../components/Page'
 function Cafe({ openingHours }) {
   return (
     <>
-      <Page title={'Cafe'}>
+      <Page title={'Caffè'}>
         <div className="cafe-screen">
           <div className="container">
             <div className="cafe-screen__ethos">

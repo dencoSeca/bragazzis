@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 // Assets
-import cafeImg from '../assets/images/cafe-06.jpg'
-import shopImg from '../assets/images/shop-05.jpg'
-import stagioniImg from '../assets/images/stagioni-01.jpg'
+import cafeImg from '../assets/images/cafe-6.jpg'
+import shopImg from '../assets/images/shop-5.jpg'
+import seasonalityImg from '../assets/images/seasonality-1.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
@@ -78,7 +78,7 @@ function Boxes({ openingHours }) {
             />
           </div>
           <Link className="boxes__content" to="/cafe">
-            <h4 className="boxes__content-heading">Cafe</h4>
+            <h4 className="boxes__content-heading">Caffè</h4>
             <span className="boxes__content-tagline">
               Panini, caffé & pasticcini.
             </span>
@@ -112,7 +112,7 @@ function Boxes({ openingHours }) {
             />
           </div>
           <Link className="boxes__content" to="/shop">
-            <h4 className="boxes__content-heading">Shop</h4>
+            <h4 className="boxes__content-heading">Il Negozio</h4>
             <span className="boxes__content-tagline">
               Roam freely & find inspiration... or that obscure pasta shape that
               you've been looking for.
@@ -122,7 +122,7 @@ function Boxes({ openingHours }) {
         <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
-              src={stagioniImg}
+              src={seasonalityImg}
               alt="cafe scene"
               initial={{ scale: 1.3 }}
               animate={{
@@ -139,10 +139,10 @@ function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <Link className="boxes__content" to="/stagioni">
-            <h4 className="boxes__content-heading">Stagioni</h4>
+          <Link className="boxes__content" to="/stagionalita">
+            <h4 className="boxes__content-heading">Stagionalità</h4>
             <span className="boxes__content-tagline">
-              Sandwich, caffé & pasticcini.
+              Each season brings a selection of well considered products.
             </span>
           </Link>
         </motion.div>

@@ -12,7 +12,7 @@ import Home from './pages/Home'
 import OurStory from './pages/OurStory'
 import Cafe from './pages/Cafe'
 import Shop from './pages/Shop'
-import Stagioni from './pages/Stagioni'
+import Seasonality from './pages/Seasonality'
 
 const defaultOpeningHours = [
   'Monday: 9.30AM - 4.30PM',
@@ -37,7 +37,13 @@ function debounce(fn, ms) {
 
 function App() {
   const [openingHours, setOpeningHours] = useState([
-    'Updating opening hours...'
+    'Updating opening hours...',
+    ' ',
+    ' ',
+    ' ',
+    ' ',
+    ' ',
+    ' '
   ])
 
   // =================
@@ -108,7 +114,7 @@ function App() {
                 <Route path="/our-story" component={OurStory} />
                 <Route path="/cafe" component={Cafe} />
                 <Route path="/shop" component={Shop} />
-                <Route path="/stagioni" component={Stagioni} />
+                <Route path="/seasonality" component={Seasonality} />
               </Switch>
             </AnimatePresence>
           )}

@@ -125,16 +125,16 @@ function Header({ history }) {
             <div className="col-md-5">
               <ul className="menu__links">
                 <li>
-                  <Link to="/our-story">Our Story</Link>
+                  <Link to="/our-story">La Storia</Link>
                 </li>
                 <li>
-                  <Link to="/cafe">Cafe</Link>
+                  <Link to="/cafe">Caffè</Link>
                 </li>
                 <li>
-                  <Link to="/shop">Shop</Link>
+                  <Link to="/shop">Il Negozio</Link>
                 </li>
                 <li>
-                  <Link to="/stagioni">Stagioni</Link>
+                  <Link to="/stagionalita">Stagionalità</Link>
                 </li>
               </ul>
             </div>

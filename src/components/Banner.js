@@ -94,7 +94,7 @@ function Banner() {
             exit="exit"
           >
             <Link to="/our-story">
-              Our story <RightArrow />
+              La Storia <RightArrow />
             </Link>
           </motion.div>
         </div>

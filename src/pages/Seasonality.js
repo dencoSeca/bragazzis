@@ -3,12 +3,12 @@ import React from 'react'
 // Components
 import Page from '../components/Page'
 
-function Stagioni() {
+function Seasonality() {
   return (
     <>
-      <Page title={'Stagioni'}></Page>
+      <Page title={'Stagionalità'}></Page>
     </>
   )
 }
 
-export default Stagioni
+export default Seasonality
