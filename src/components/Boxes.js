@@ -139,7 +139,7 @@ function Boxes({ openingHours }) {
               }}
             />
           </div>
-          <Link className="boxes__content" to="/stagionalita">
+          <Link className="boxes__content" to="/seasonality">
             <h4 className="boxes__content-heading">Stagionalità</h4>
             <span className="boxes__content-tagline">
               Each season brings a selection of well considered products.
