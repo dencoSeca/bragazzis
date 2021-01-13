@@ -134,7 +134,7 @@ function Header({ history }) {
                   <Link to="/shop">Il Negozio</Link>
                 </li>
                 <li>
-                  <Link to="/stagionalita">Stagionalità</Link>
+                  <Link to="/seasonality">Stagionalità</Link>
                 </li>
               </ul>
             </div>
