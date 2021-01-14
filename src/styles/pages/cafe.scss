@@ -1,22 +1,6 @@
-.cafe__opening-hours-wrapper {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  margin-right: 10%;
-}
-
 .cafe__opening-hours-line {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  text-align: right;
   color: $black;
   margin: 0.875rem 0;
-}
-
-.cafe__banner-img {
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
 }
