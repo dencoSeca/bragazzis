@@ -27,6 +27,35 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  max-width: 800px;
+  margin: 32px auto;
+  text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    max-width: 600px;
+  }
+}
+
+// Style main container for React Router to display in
+.main {
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+  z-index: 1;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+}
+
 // Hide Scrollbars
 * {
   -ms-overflow-style: none; /* IE and Edge */
@@ -55,19 +84,4 @@ a {
   &:active {
     text-decoration: none;
   }
-}
-
-// Style main container for React Router to display in
-.main {
-  background-color: $white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: scroll;
-  z-index: 1;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100vw;
 }

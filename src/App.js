@@ -112,7 +112,9 @@ function App() {
                   <Home openingHours={openingHours} />
                 </Route>
                 <Route path="/our-story" component={OurStory} />
-                <Route path="/cafe" component={Cafe} />
+                <Route path="/cafe">
+                  <Cafe openingHours={openingHours} />
+                </Route>
                 <Route path="/shop" component={Shop} />
                 <Route path="/seasonality" component={Seasonality} />
               </Switch>

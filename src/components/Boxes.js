@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 // Assets
-import cafeImg from '../assets/images/cafe-6.jpg'
-import shopImg from '../assets/images/shop-5.jpg'
-import seasonalityImg from '../assets/images/seasonality-1.jpg'
+import cafeImg from '../assets/images/bragazzis-cafe-6.jpg'
+import shopImg from '../assets/images/bragazzis-shop-5.jpg'
+import seasonalityImg from '../assets/images/bragazzis-seasonality-1.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'
@@ -84,9 +84,9 @@ function Boxes({ openingHours }) {
             </span>
             <div className="boxes__opening-hours-wrapper">
               {openingHours.map((data, index) => (
-                <p className="boxes__opening-hours-line" key={index}>
+                <div className="boxes__opening-hours-line" key={index}>
                   {data}
-                </p>
+                </div>
               ))}
             </div>
           </Link>

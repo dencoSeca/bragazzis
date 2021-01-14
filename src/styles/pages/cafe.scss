@@ -1,31 +1,18 @@
-.cafe-screen {
-  h3 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
+.banner__wrapper {
+  height: 500px;
+  position: relative;
 }
 
-.conversation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 250px;
-  margin-bottom: 64px;
+.banner__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.conversation__line {
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
-.conversation__left-wrapper {
-  margin-left: 156px;
-}
-
-.conversation__right-wrapper {
-  margin-right: 156px;
-  margin-left: auto;
+.cafe-ethos {
+  margin-bottom: 96px;
 }

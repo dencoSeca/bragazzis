@@ -64,7 +64,7 @@ function Banner() {
     <>
       <div className="banner container">
         <div className="banner__heading-wrapper">
-          <h2 className="banner__heading">
+          <h1 className="banner__heading">
             <div className="banner__heading-line">
               <motion.span
                 variants={lineOneVariants}
@@ -85,7 +85,7 @@ function Banner() {
                 Italian goods.
               </motion.span>
             </div>
-          </h2>
+          </h1>
           <motion.div
             className="banner__link"
             variants={linkVariants}
