@@ -41,7 +41,7 @@ $headerMobileHeight: 50px;
   span {
     width: 28px;
     height: 1px;
-    background-color: #000;
+    background-color: $black;
     display: block;
     margin: 5px;
     @media (max-width: $tablet) {
