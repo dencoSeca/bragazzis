@@ -11,21 +11,20 @@ import craigImg from '../assets/images/bragazzis-cafe-10.jpg'
 function Cafe({ openingHours }) {
   return (
     <>
-      <Page title={'Caffè'}>
+      <Page title={'Caffè'} color="#DE4C3C">
         <div className="container">
           <div className="row">
-            <div className="col-md-4"><div className="cafe__opening-hours-wrapper">
-            {openingHours.map((data, index) => (
-              <div className="cafe__opening-hours-line" key={index}>
-                {data}
+            <div className="col-md-4">
+              <div className="cafe__opening-hours-wrapper">
+                {openingHours.map((data, index) => (
+                  <div className="cafe__opening-hours-line" key={index}>
+                    {data}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div></div>
-            <div className="col-md-8">
-              
             </div>
+            <div className="col-md-8"></div>
           </div>
-          
         </div>
       </Page>
     </>

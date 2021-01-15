@@ -62,7 +62,7 @@ const contentVariants = {
   }
 }
 
-function Page({ title, children }) {
+function Page({ title, children, color }) {
   return (
     <>
       <div className="page">
@@ -74,8 +74,9 @@ function Page({ title, children }) {
             animate="animate"
             exit="exit"
           >
-            <h1 className="page__title">{title}</h1>
-            <div className="page__title-underline"></div>
+            <h1 className="page__title" style={{ color }}>
+              {title}
+            </h1>
           </motion.div>
         </div>
         <motion.div

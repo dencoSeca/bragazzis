@@ -4,27 +4,20 @@
 
 .page__title {
   width: 100%;
-  font-size: 2em;
+  font-size: 8em;
   color: $black;
   font-weight: 700;
   margin-top: 160px;
-  margin-bottom: 0;
   @media (max-width: $tablet) {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 0.25rem;
     margin-top: 150px;
     margin-bottom: 72px;
   }
   @media (max-width: 992px) {
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 0.1rem;
     margin-top: 100px;
     margin-bottom: 64px;
   }
-}
-
-.page__title-underline {
-  height: 3px;
-  background-color: $black;
-  margin-bottom: 4rem;
 }
