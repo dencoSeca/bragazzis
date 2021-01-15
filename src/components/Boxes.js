@@ -57,7 +57,7 @@ function Boxes({ openingHours }) {
         animate="animate"
         exit="exit"
       >
-        <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
+        <motion.div className="boxes__box col-md-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
               src={cafeImg}
@@ -91,7 +91,7 @@ function Boxes({ openingHours }) {
             </div>
           </Link>
         </motion.div>
-        <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
+        <motion.div className="boxes__box col-md-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
               src={shopImg}
@@ -119,7 +119,7 @@ function Boxes({ openingHours }) {
             </span>
           </Link>
         </motion.div>
-        <motion.div className="boxes__box col-xl-4" variants={boxVariants}>
+        <motion.div className="boxes__box col-md-4" variants={boxVariants}>
           <div className="boxes__background-image">
             <motion.img
               src={seasonalityImg}
