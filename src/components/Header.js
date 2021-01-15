@@ -36,6 +36,9 @@ function Header({ history }) {
     })
     setIsBtnDisabled(true)
     if (menuIsOpen) {
+      gsap.to('.header', 0, {
+        backgroundColor: 'transparent'
+      })
       gsap.to('body', 0, {
         css: {
           overflow: 'hidden'
@@ -88,6 +91,11 @@ function Header({ history }) {
         marginTop:
           window.innerWidth < 760 ? 2 : window.innerWidth < 992 ? 3 : 5,
         ease: 'expo.out'
+      })
+      gsap.to('.header', 0.24, {
+        backgroundColor: '#fff',
+        delay: 0.42,
+        ease: ease.smooth
       })
     }
     setIsBtnDisabled(false)
