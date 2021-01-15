@@ -9,7 +9,7 @@
   font-weight: 700;
   margin-top: 160px;
   margin-bottom: 0;
-  @media (max-width: 1200px) {
+  @media (max-width: $tablet) {
     font-size: 4rem;
     letter-spacing: 0.25rem;
     margin-top: 150px;
