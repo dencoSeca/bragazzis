@@ -36,15 +36,7 @@ function debounce(fn, ms) {
 }
 
 function App() {
-  const [openingHours, setOpeningHours] = useState([
-    'Updating opening hours...',
-    ' ',
-    ' ',
-    ' ',
-    ' ',
-    ' ',
-    ' '
-  ])
+  const [openingHours, setOpeningHours] = useState(defaultOpeningHours)
 
   // =================
   // Prevent flashing
@@ -96,7 +88,6 @@ function App() {
       })
       .catch(() => {
         console.error('Cannot fetch opening hours from Places API')
-        setOpeningHours(defaultOpeningHours)
       })
   }, [])
 

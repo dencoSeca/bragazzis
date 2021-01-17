@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 // Assets
-import cafeImg from '../assets/images/bragazzis-cafe-6.jpg'
-import shopImg from '../assets/images/bragazzis-shop-5.jpg'
-import seasonalityImg from '../assets/images/bragazzis-seasonality-1.jpg'
+import cafeImg from '../assets/images/bragazzis-coffee-pour.jpg'
+import shopImg from '../assets/images/bragazzis-shop-old-sign.jpg'
+import seasonalityImg from '../assets/images/bragazzis-easter-egg.jpg'
 
 // Animations
 import ease from '../styles/animations/ease'

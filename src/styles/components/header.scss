@@ -4,7 +4,7 @@ $headerMobileHeight: 50px;
 .header {
   width: 100%;
   position: fixed;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   z-index: 2;
   top: 0;
   left: 0;
@@ -76,6 +76,7 @@ $headerMobileHeight: 50px;
   right: 0;
   height: 550px;
   width: 100%;
+  opacity: 0;
   padding-top: $headerDesktopHeight;
   background-color: $black;
   @media (max-width: $mobile) {

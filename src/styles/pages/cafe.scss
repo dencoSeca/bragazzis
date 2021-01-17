@@ -1,6 +1,25 @@
+.cafe__row {
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
 .cafe__opening-hours-line {
   font-size: 1.2rem;
   font-weight: 600;
   color: $black;
   margin: 0.875rem 0;
+  text-align: right;
+}
+
+.cafe__text {
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+  text-align: right;
+}
+
+.cafe__image {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 2px;
 }

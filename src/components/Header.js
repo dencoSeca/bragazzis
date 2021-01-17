@@ -36,6 +36,9 @@ function Header({ history }) {
     })
     setIsBtnDisabled(true)
     if (menuIsOpen) {
+      gsap.to('.menu', 0, {
+        opacity: 1
+      })
       gsap.to('.header', 0, {
         backgroundColor: 'transparent'
       })
@@ -93,9 +96,13 @@ function Header({ history }) {
         ease: 'expo.out'
       })
       gsap.to('.header', 0.24, {
-        backgroundColor: '#fff',
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
         delay: 0.42,
         ease: ease.smooth
+      })
+      gsap.to('.menu', 0, {
+        opacity: 0,
+        delay: 0.8
       })
     }
     setIsBtnDisabled(false)
