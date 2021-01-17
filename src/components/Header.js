@@ -96,7 +96,7 @@ function Header({ history }) {
         ease: 'expo.out'
       })
       gsap.to('.header', 0.24, {
-        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        backgroundColor: 'rgba(255, 255, 255, 0.85)',
         delay: 0.42,
         ease: ease.smooth
       })
