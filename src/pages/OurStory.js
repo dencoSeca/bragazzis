@@ -4,15 +4,13 @@ import React from 'react'
 import Page from '../components/Page'
 
 // Assets
-import ticketsImg from '../assets/images/bragazzis-tickets.jpg'
+import ticketsImage from '../assets/images/bragazzis-tickets.jpg'
+import dayOneImage from '../assets/images/bragazzis-day-one.jpg'
 
 function OurStory() {
   return (
     <>
       <Page title={'La Storia'} color="#006B9B">
-        <div className="banner">
-          <img src={ticketsImg} alt="" className="banner__image" />
-        </div>
         <div className="container">
           <div className="content-card">
             <h4>History</h4>
@@ -34,28 +32,26 @@ function OurStory() {
               ready for the cafe to come.
             </p>
           </div>
-          <div className="our-story__content">
-            <div className="content-card">
-              <h4>What we do</h4>
-              <p>
-                Bragazzi’s is a cafe, delicatessen and shop. We sell Italian
-                perishables and dry goods, all of which are good to eat. Most
-                people come for the sandwiches, which are potent assemblies of
-                D.O.C cheese, salami and preserved vegetables.
-              </p>
-              <p>
-                At breakfast, we have pastries. In summer we have gelato. In
-                winter, we have shelves of hard-to-find Christmas produce direct
-                from producers in Italy.
-              </p>
-            </div>
-            <div className="content-card">
-              <h4>Services</h4>
-              <p>
-                Bragazzi’s cater for all functions. All of our food is made
-                in-house and shaped around what you need for your event.
-              </p>
-            </div>
+          <div className="content-card">
+            <h4>What we do</h4>
+            <p>
+              Bragazzi’s is a cafe, delicatessen and shop. We sell Italian
+              perishables and dry goods, all of which are good to eat. Most
+              people come for the sandwiches, which are potent assemblies of
+              D.O.C cheese, salami and preserved vegetables.
+            </p>
+            <p>
+              At breakfast, we have pastries. In summer we have gelato. In
+              winter, we have shelves of hard-to-find Christmas produce direct
+              from producers in Italy.
+            </p>
+          </div>
+          <div className="content-card">
+            <h4>Services</h4>
+            <p>
+              Bragazzi’s cater for all functions. All of our food is made
+              in-house and shaped around what you need for your event.
+            </p>
           </div>
         </div>
       </Page>

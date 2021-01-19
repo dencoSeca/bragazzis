@@ -21,8 +21,8 @@ function Cafe({ openingHours }) {
             ))}
           </div>
         </div>
-        <div className="banner__">
-          <img src={craigImg} alt="" className="banner__image" />
+        <div className="full-width-banner">
+          <img src={craigImg} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
           <div className="content-card">
@@ -55,8 +55,8 @@ function Cafe({ openingHours }) {
             </p>
           </div>
         </div>
-        <div className="banner__">
-          <img src={sandwichesImg} alt="" className="banner__image" />
+        <div className="full-width-banner">
+          <img src={sandwichesImg} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
           <div className="content-card">
