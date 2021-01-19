@@ -30,7 +30,11 @@ function Cafe({ openingHours }) {
               <h4>Coffee</h4>
               <p>
                 We use our own carefully curated blend, roasted by{' '}
-                <a className="cafe__link" href="https://darkwoodscoffee.co.uk" target="_blank" rel="noreferrer">
+                <a
+                  href="https://darkwoodscoffee.co.uk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Darkwoods Coffee, West Yorkshire
                 </a>
                 . We only use specialty graded coffee which has a cleaner and
