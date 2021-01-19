@@ -13,7 +13,6 @@
 @import './pages/ourStory.scss';
 @import './pages/cafe.scss';
 
-// General Styles
 body,
 html {
   visibility: hidden;
@@ -70,4 +69,55 @@ a {
   &:active {
     text-decoration: none;
   }
+}
+
+// General Styles
+.content-card {
+  margin: 8rem auto;
+  max-width: 600px;
+  @media (max-width: $largeTablet) {
+    margin: 7rem auto;
+  }
+  @media (max-width: $mobile) {
+    margin: 5rem auto;
+  }
+
+  h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    @media (max-width: $largeTablet) {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    @media (max-width: $largeTablet) {
+      font-size: 1rem;
+      line-height: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: $mobile) {
+      font-size: 0.875rem;
+      line-height: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+.banner {
+  height: 800px;
+}
+
+.banner__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
