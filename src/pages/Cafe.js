@@ -6,7 +6,7 @@ import Page from '../components/Page'
 // Assets
 import grinderImg from '../assets/images/bragazzis-grinder.jpg'
 import craigImg from '../assets/images/bragazzis-craig-reading.jpg'
-import sandwichesMadeImg from '../assets/images/bragazzis-sandwiches-made-2.jpg'
+import sandwichesImg from '../assets/images/bragazzis-sandwiches-open.jpg'
 
 function Cafe({ openingHours }) {
   return (
@@ -29,11 +29,14 @@ function Cafe({ openingHours }) {
             <div className="cafe__content-card">
               <h4>Coffee</h4>
               <p>
-                We use our own carefully curated blend, roasted by Darkwoods
-                Coffee, West Yorkshire. We only use specialty graded coffee
-                which has a cleaner and more distinctive flavour than commercial
-                coffee, and is traceable back to the skilled farmers than
-                produce it, and their farms across the world.
+                We use our own carefully curated blend, roasted by{' '}
+                <a className="cafe__link" href="https://darkwoodscoffee.co.uk" target="_blank" rel="noreferrer">
+                  Darkwoods Coffee, West Yorkshire
+                </a>
+                . We only use specialty graded coffee which has a cleaner and
+                more distinctive flavour than commercial coffee, and is
+                traceable back to the skilled farmers that produce it, and their
+                farms across the world.
               </p>
             </div>
             <div className="cafe__content-card">
@@ -47,6 +50,36 @@ function Cafe({ openingHours }) {
                 sugo.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="cafe__banner">
+          <img src={sandwichesImg} alt="" className="cafe__banner-image" />
+        </div>
+        <div className="container">
+          <div className="cafe__content-card">
+            <h4>Covid Policy</h4>
+            <p>
+              We want to reassure you that we are putting all measures in place
+              to keep you and our team safe so that you can confidently enjoy
+              your visit.
+            </p>
+
+            <p>
+              We are following all government guidelines and working on practice
+              measures within the shop. We have completed necessary risk
+              assessments and all procedures which will be constantly reviewed
+              and updated where necessary in line with government guidelines.
+            </p>
+
+            <p>
+              We ask you to please use common sense to play your part keeping
+              everyone safe. In return we will be doing the same for you.
+            </p>
+
+            <p>
+              Due to the constantly changing nature of this guidance, we will be
+              continuously reviewing our procedures related to capacity.
+            </p>
           </div>
         </div>
       </Page>
