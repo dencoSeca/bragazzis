@@ -1,6 +1,18 @@
-.cafe__row {
-  margin-bottom: 128px;
-  margin-top: 128px;
+.cafe__banner {
+  height: 800px;
+  position: relative;
+}
+
+.cafe__banner-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cafe__opening-hours {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .cafe__opening-hours-line {
@@ -8,18 +20,5 @@
   font-weight: 600;
   color: $black;
   margin: 0.875rem 0;
-  text-align: right;
-}
-
-.cafe__text {
-  font-size: 1.2rem;
-  line-height: 2.6rem;
-  text-align: right;
-}
-
-.cafe__image {
-  height: 500px;
-  width: 500px;
-  object-fit: cover;
-  border-radius: 2px;
+  text-align: center;
 }
