@@ -10,7 +10,7 @@
 }
 
 .cafe__opening-hours {
-  width: 300px;
+  width: fit-content;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
@@ -20,5 +20,20 @@
   font-weight: 600;
   color: $black;
   margin: 0.875rem 0;
-  text-align: center;
+  // text-align: center;
+}
+
+.cafe__content-card {
+  margin: 8rem auto;
+  max-width: 600px;
+
+  h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
