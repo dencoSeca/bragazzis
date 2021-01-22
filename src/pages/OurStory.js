@@ -10,7 +10,7 @@ import dayOneImage from '../assets/images/bragazzis-day-one.jpg'
 function OurStory() {
   return (
     <>
-      <Page title={'La Storia'} color="#006B9B">
+      <Page title={'La Storia'} color="#019A57">
         <div className="container">
           <div className="content-card">
             <h4>History</h4>

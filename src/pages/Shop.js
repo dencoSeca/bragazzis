@@ -3,10 +3,16 @@ import React from 'react'
 // Components
 import Page from '../components/Page'
 
+// Assets
+import produceImage from '../assets/images/bragazzis-produce-1.jpg'
+
 function Shop() {
   return (
     <>
-      <Page title={'Il Negozio'} color="#019A57">
+      <Page title={'Il Negozio'} color="#006B9B">
+        <div className="full-width-banner">
+          <img src={produceImage} alt="" className="full-width-banner__image" />
+        </div>
         <div className="content-card">
           <p>
             We trade directly with suppliers in Italy. We choose to work with
