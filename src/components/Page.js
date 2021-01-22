@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 // Animations
@@ -63,6 +63,12 @@ const contentVariants = {
 }
 
 function Page({ title, children, color }) {
+  // Scroll to top on component load
+  useEffect(() => {
+    const mainContainer = document.querySelector('.main')
+    mainContainer.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className="page">
