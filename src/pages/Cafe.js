@@ -12,14 +12,12 @@ function Cafe({ openingHours }) {
   return (
     <>
       <Page title={'Caffè'} color="#DE4C3C">
-        <div className="container">
-          <div className="cafe__opening-hours">
-            {openingHours.map((data, index) => (
-              <div className="cafe__opening-hours-line" key={index}>
-                {data}
-              </div>
-            ))}
-          </div>
+        <div className="cafe__opening-hours">
+          {openingHours.map((data, index) => (
+            <span className="cafe__opening-hours-line" key={index}>
+              {data}
+            </span>
+          ))}
         </div>
         <div className="full-width-banner">
           <img src={craigImg} alt="" className="full-width-banner__image" />
@@ -56,7 +54,11 @@ function Cafe({ openingHours }) {
           </div>
         </div>
         <div className="full-width-banner">
-          <img src={sandwichesImg} alt="" className="full-width-banner__image" />
+          <img
+            src={sandwichesImg}
+            alt=""
+            className="full-width-banner__image"
+          />
         </div>
         <div className="container">
           <div className="content-card">

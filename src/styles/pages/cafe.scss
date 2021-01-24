@@ -1,14 +1,13 @@
 .cafe__opening-hours {
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem;
 }
 
 .cafe__opening-hours-line {
   font-size: 1.2rem;
   font-weight: 600;
   color: $black;
-  margin: 0.875rem 0;
   // text-align: center;
 }
 

@@ -72,19 +72,17 @@ function Page({ title, children, color }) {
   return (
     <>
       <div className="page">
-        <div className="container">
-          <motion.div
-            className="page__title-wrapper"
-            variants={titleVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-          >
-            <h1 className="page__title" style={{ color }}>
-              {title}
-            </h1>
-          </motion.div>
-        </div>
+        <motion.div
+          className="page__title-wrapper"
+          variants={titleVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+        >
+          <h1 className="page__title" style={{ color }}>
+            {title}
+          </h1>
+        </motion.div>
         <motion.div
           className="page__content"
           variants={contentVariants}
