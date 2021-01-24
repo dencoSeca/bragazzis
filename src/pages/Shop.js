@@ -11,6 +11,9 @@ function Shop() {
   return (
     <>
       <Page title={'Il Negozio'} color="#007DB8">
+        <div className="full-width-banner">
+          <img src={produceImage} alt="" className="full-width-banner__image" />
+        </div>
         <div className="container">
           <div className="content-card">
             <h4>Authenticity</h4>
@@ -27,9 +30,7 @@ function Shop() {
             </p>
           </div>
         </div>
-        <div className="full-width-banner">
-          <img src={produceImage} alt="" className="full-width-banner__image" />
-        </div>
+
         <div className="container">
           <div className="content-card">
             <h4>Open All Hours</h4>
@@ -41,11 +42,7 @@ function Shop() {
           </div>
         </div>
         <div className="full-width-banner">
-          <img
-            src={counterImage}
-            alt=""
-            className="full-width-banner__image"
-          />
+          <img src={counterImage} alt="" className="full-width-banner__image" />
         </div>
       </Page>
     </>
