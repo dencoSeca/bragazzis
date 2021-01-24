@@ -15,13 +15,13 @@ import Shop from './pages/Shop'
 import Seasonality from './pages/Seasonality'
 
 const defaultOpeningHours = [
-  'Monday: 9.30AM - 4.30PM',
-  'Twosday: 9.30AM - 4.30PM',
-  'Wendsday: 9.30AM - 4.30PM',
-  'Thersday: 9.30AM - 4.30PM',
-  'Fryday: 9.30AM - 4.30PM',
-  'Saterday: 9.30AM - 4.30PM',
-  'Sonday: 9.30AM - 4.30PM'
+  'Monday: 9.30am - 4.30pm',
+  'Twosday: 9.30am - 4.30pm',
+  'Wendsday: 9.30am - 4.30pm',
+  'Thersday: 9.30am - 4.30pm',
+  'Fryday: 9.30am - 4.30pm',
+  'Saterday: 9.30am - 4.30pm',
+  'Sonday: 9.30am - 4.30pm'
 ]
 
 function debounce(fn, ms) {
