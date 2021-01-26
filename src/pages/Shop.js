@@ -33,7 +33,9 @@ function Shop() {
             </p>
           </div>
         </div>
-
+        <div className="full-width-banner">
+          <img src={counterImage} alt="" className="full-width-banner__image" />
+        </div>
         <div className="container">
           <div className="content-card">
             <h4>Open All Hours</h4>
@@ -44,9 +46,6 @@ function Shop() {
               and the unrelenting pursuit of making good coffee.
             </p>
           </div>
-        </div>
-        <div className="full-width-banner">
-          <img src={counterImage} alt="" className="full-width-banner__image" />
         </div>
       </Page>
     </>
