@@ -11,6 +11,7 @@ function Shop() {
   return (
     <>
       <Page title={'Il Negozio'} color="#007DB8">
+        <div className="spacer"></div>
         <div className="full-width-banner">
           <img src={produceImage} alt="" className="full-width-banner__image" />
         </div>
@@ -21,12 +22,14 @@ function Shop() {
               We trade directly with suppliers in Italy. We choose to work with
               suppliers who focus on the quality, integrity and provenance of
               their produce. Year round we sell a wide range of everyday staple
+              foods.
             </p>
             <p>
               We maintain a good supply of everyday items such as flour, dried
               pasta shapes, chocolates, and sauces, and our deli counter is
               always well stocked with DOP cheeses and cured meats. You’ll find
               fresh Italian eggs for making the most beautiful fresh pasta, and
+              fresh Italian sausage to stir through it.
             </p>
           </div>
         </div>
@@ -38,6 +41,7 @@ function Shop() {
               We are a small team of people, with different interests and
               experiences, but with a common appreciation for the somewhat
               overlooked, and at times undervalued occupation of shopkeeping,
+              and the unrelenting pursuit of making good coffee.
             </p>
           </div>
         </div>
