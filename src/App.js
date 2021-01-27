@@ -41,7 +41,7 @@ function App() {
   // =================
   // Prevent flashing
   // =================
-  gsap.to('body', 0, {
+  gsap.to('body, html', 0, {
     css: {
       visibility: 'visible'
     }
