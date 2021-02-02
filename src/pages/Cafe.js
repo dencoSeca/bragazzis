@@ -4,10 +4,10 @@ import React from 'react'
 import Page from '../components/Page'
 
 // Assets
-import grinderImage from '../assets/images/bragazzis-grinder.jpg'
+// import grinderImage from '../assets/images/bragazzis-grinder.jpg'
 import craigImage from '../assets/images/bragazzis-craig-reading.jpg'
 import sandwichesImage from '../assets/images/bragazzis-sandwiches-open.jpg'
-import cafeImage from '../assets/images/bragazzis-cafe-view-3.jpg'
+// import cafeImage from '../assets/images/bragazzis-cafe-view-3.jpg'
 
 function Cafe({ openingHours }) {
   return (
@@ -25,33 +25,35 @@ function Cafe({ openingHours }) {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
-              <div className="cafe__copy">
-                We use our own carefully curated blend, roasted by{' '}
-                <a
-                  className="cafe__link"
-                  href="https://darkwoodscoffee.co.uk"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Darkwoods Coffee, West Yorkshire
-                </a>
-                . We only use specialty graded coffee which has a cleaner and
-                more distinctive flavour than commercial coffee, and is
-                traceable back to the skilled farmers that produce it, and their
-                farms across the world.
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="cafe__copy">
-                Bragazzi’s is nothing without people. You have your regulars,
-                and they have their usual orders. We are first and foremost an
-                exercise in real-life shopkeeping and we treasure the analogue
-                charm of a brick-and-mortar shop. We relish the opportunity to
-                serve you in person and talk of espresso or the preparation of a
-                sugo.
-              </div>
-            </div>
+          </div>
+          <div className="content-card">
+            <h4>Coffee</h4>
+            <p>
+              We use our own carefully curated blend, roasted by{' '}
+              <a
+                className="cafe__link"
+                href="https://darkwoodscoffee.co.uk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Darkwoods Coffee, West Yorkshire
+              </a>
+              . We only use specialty graded coffee which has a cleaner and more
+              distinctive flavour than commercial coffee, and is traceable back
+              to the skilled farmers that produce it, and their farms across the
+              world.
+            </p>
+          </div>
+          <div className="content-card">
+            <h4>People</h4>
+            <p>
+              Bragazzi’s is nothing without people. You have your regulars, and
+              they have their usual orders. We are first and foremost an
+              exercise in real-life shopkeeping and we treasure the analogue
+              charm of a brick-and-mortar shop. We relish the opportunity to
+              serve you in person and talk of espresso or the preparation of a
+              sugo.
+            </p>
           </div>
         </div>
         <div className="full-width-banner">
