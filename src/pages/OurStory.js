@@ -4,8 +4,8 @@ import React from 'react'
 import Page from '../components/Page'
 
 // Assets
-// import ticketsImage from '../assets/images/bragazzis-tickets.jpg'
-// import dayOneImage from '../assets/images/bragazzis-day-one.jpg'
+import ticketsImage from '../assets/images/bragazzis-tickets.jpg'
+import dayOneImage from '../assets/images/bragazzis-day-one.jpg'
 
 function OurStory() {
   return (
