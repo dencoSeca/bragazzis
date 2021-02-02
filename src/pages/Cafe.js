@@ -24,34 +24,34 @@ function Cafe({ openingHours }) {
           <img src={craigImage} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
-          <div className="content-card">
-            <h4>Coffee</h4>
-            <p>
-              We use our own carefully curated blend, roasted by{' '}
-              <a
-                className="cafe__link"
-                href="https://darkwoodscoffee.co.uk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Darkwoods Coffee, West Yorkshire
-              </a>
-              . We only use specialty graded coffee which has a cleaner and more
-              distinctive flavour than commercial coffee, and is traceable back
-              to the skilled farmers that produce it, and their farms across the
-              world.
-            </p>
-          </div>
-          <div className="content-card">
-            <h4>People</h4>
-            <p>
-              Bragazzi’s is nothing without people. You have your regulars, and
-              they have their usual orders. We are first and foremost an
-              exercise in real-life shopkeeping and we treasure the analogue
-              charm of a brick-and-mortar shop. We relish the opportunity to
-              serve you in person and talk of espresso or the preparation of a
-              sugo.
-            </p>
+          <div className="row">
+            <div className="col-sm-6">
+              <div className="cafe__copy">
+                We use our own carefully curated blend, roasted by{' '}
+                <a
+                  className="cafe__link"
+                  href="https://darkwoodscoffee.co.uk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Darkwoods Coffee, West Yorkshire
+                </a>
+                . We only use specialty graded coffee which has a cleaner and
+                more distinctive flavour than commercial coffee, and is
+                traceable back to the skilled farmers that produce it, and their
+                farms across the world.
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="cafe__copy">
+                Bragazzi’s is nothing without people. You have your regulars,
+                and they have their usual orders. We are first and foremost an
+                exercise in real-life shopkeeping and we treasure the analogue
+                charm of a brick-and-mortar shop. We relish the opportunity to
+                serve you in person and talk of espresso or the preparation of a
+                sugo.
+              </div>
+            </div>
           </div>
         </div>
         <div className="full-width-banner">
