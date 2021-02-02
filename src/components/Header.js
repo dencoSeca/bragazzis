@@ -51,14 +51,6 @@ function Header({ history }) {
         y: window.innerWidth < 760 ? '580px' : '550px',
         ease: 'expo.out'
       })
-      gsap.to('.header__logo a', 0.1, {
-        color: '#fff',
-        ease: 'expo.out'
-      })
-      gsap.to('.header__btn span', 0.1, {
-        backgroundColor: '#fff',
-        ease: 'expo.out'
-      })
       gsap.to('.header__btn-top-span', 0.8, {
         marginBottom: 0,
         ease: 'expo.out'
@@ -76,14 +68,6 @@ function Header({ history }) {
       gsap.to('.main', 0.8, {
         y: 0,
         ease: 'expo.out'
-      })
-      gsap.to('.header__logo a', 0, {
-        color: '#000',
-        delay: 0.24
-      })
-      gsap.to('.header__btn span', 0, {
-        backgroundColor: '#000',
-        delay: 0.24
       })
       gsap.to('.header__btn-top-span', 0.8, {
         marginBottom:
