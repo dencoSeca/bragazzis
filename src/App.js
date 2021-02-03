@@ -21,7 +21,7 @@ const defaultOpeningHours = [
   'Thersday: 9.30am - 4.30pm',
   'Fryday: 9.30am - 4.30pm',
   'Saterday: 9.30am - 4.30pm',
-  'Sonday: 9.30am - 4.30pm'
+  'Sonday: 9.30am - 4.30pm',
 ]
 
 function debounce(fn, ms) {
@@ -43,8 +43,8 @@ function App() {
   // =================
   gsap.to('body, html', 0, {
     css: {
-      visibility: 'visible'
-    }
+      visibility: 'visible',
+    },
   })
 
   // =========================================
@@ -52,7 +52,7 @@ function App() {
   // =========================================
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
-    width: window.innerWidth
+    width: window.innerWidth,
   })
 
   useEffect(() => {
@@ -64,7 +64,7 @@ function App() {
     const debouncedHandleResize = debounce(function handleResize() {
       setDimensions({
         height: window.innerHeight,
-        width: window.innerWidth
+        width: window.innerWidth,
       })
     }, 1000)
 
@@ -80,7 +80,7 @@ function App() {
   // ===========================================
   useEffect(() => {
     fetch(
-      'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyBMnHkqSbbWDI8oipDnotNtzf7AltbSquM&place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text'
+      `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?key=${process.env.REACT_APP_PLACES_API_KEY}place_id=ChIJXQTkrGGCeUgRSaL1gEOk_MY&fields=opening_hours/weekday_text`
     )
       .then(res => res.json())
       .then(parsed => {
