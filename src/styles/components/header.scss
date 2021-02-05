@@ -24,6 +24,22 @@ $headerMobileHeight: 50px;
   justify-content: space-between;
 }
 
+.header__logo {
+  a {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: #fff;
+    mix-blend-mode: difference;
+    @media (max-width: $tablet) {
+      font-size: 1rem;
+    }
+    @media (max-width: $mobile) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
 .header__btn {
   height: 50px;
   width: 50px;
@@ -53,22 +69,6 @@ $headerMobileHeight: 50px;
     @media (max-width: $mobile) {
       width: 18px;
       margin: 2px;
-    }
-  }
-}
-
-.header__logo {
-  a {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-    color: #fff;
-    mix-blend-mode: difference;
-    @media (max-width: $tablet) {
-      font-size: 1rem;
-    }
-    @media (max-width: $mobile) {
-      font-size: 0.875rem;
     }
   }
 }
