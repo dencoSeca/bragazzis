@@ -116,13 +116,11 @@ a {
 
 .full-width-banner {
   height: 800px;
-  margin: 0 3rem;
   @media (max-width: $largeTablet) {
     height: 600px;
   }
   @media (max-width: $mobile) {
     height: 400px;
-    margin: 0;
   }
 }
 

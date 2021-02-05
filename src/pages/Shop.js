@@ -4,8 +4,8 @@ import React from 'react'
 import Page from '../components/Page'
 
 // Assets
-import produceImage from '../assets/images/bragazzis-produce-1.jpg'
-import counterImage from '../assets/images/bragazzis-hanging-panettone-8.jpg'
+import produceImage from '../assets/images/bragazzis-coffee-pour.jpg'
+import counterImage from '../assets/images/bragazzis-coffee-pour.jpg'
 
 function Shop() {
   return (

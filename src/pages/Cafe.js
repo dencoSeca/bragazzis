@@ -5,7 +5,7 @@ import Page from '../components/Page'
 
 // Assets
 // import grinderImage from '../assets/images/bragazzis-grinder.jpg'
-import craigImage from '../assets/images/bragazzis-craig-reading.jpg'
+import cloudImage from '../assets/images/bragazzis-clouds.jpg'
 import sandwichesImage from '../assets/images/bragazzis-sandwiches-open.jpg'
 // import cafeImage from '../assets/images/bragazzis-cafe-view-3.jpg'
 
@@ -21,7 +21,7 @@ function Cafe({ openingHours }) {
           ))}
         </div>
         <div className="full-width-banner">
-          <img src={craigImage} alt="" className="full-width-banner__image" />
+          <img src={cloudImage} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
           <div className="row">
