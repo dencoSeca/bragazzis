@@ -12,6 +12,7 @@
   font-size: 0.95vw;
   font-weight: 600;
   color: $black;
+  margin-top: 1rem;
   @media (max-width: $mobile) {
     font-size: 1rem;
     text-align: center;
@@ -26,6 +27,3 @@
   text-align: center;
 }
 
-.cafe__link {
-  color: $red;
-}

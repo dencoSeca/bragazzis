@@ -24,14 +24,12 @@ function Cafe({ openingHours }) {
           <img src={cloudImage} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
-          <div className="row">
-          </div>
-          <div className="content-card">
-            <h4>Coffee</h4>
+          {/* == */}
+          <div className="excerpt">
             <p>
-              We use our own carefully curated blend, roasted by{' '}
+              We use our own carefully curated blend, roasted by <br />
               <a
-                className="cafe__link"
+                className="colored-link"
                 href="https://darkwoodscoffee.co.uk"
                 target="_blank"
                 rel="noreferrer"
@@ -44,52 +42,11 @@ function Cafe({ openingHours }) {
               world.
             </p>
           </div>
-          <div className="content-card">
-            <h4>People</h4>
-            <p>
-              Bragazzi’s is nothing without people. You have your regulars, and
-              they have their usual orders. We are first and foremost an
-              exercise in real-life shopkeeping and we treasure the analogue
-              charm of a brick-and-mortar shop. We relish the opportunity to
-              serve you in person and talk of espresso or the preparation of a
-              sugo.
-            </p>
-          </div>
         </div>
         <div className="full-width-banner">
-          <img
-            src={sandwichesImage}
-            alt=""
-            className="full-width-banner__image"
-          />
+          <img src={cloudImage} alt="" className="full-width-banner__image" />
         </div>
-        <div className="container">
-          <div className="content-card">
-            <h4>Covid Policy</h4>
-            <p>
-              We want to reassure you that we are putting all measures in place
-              to keep you and our team safe so that you can confidently enjoy
-              your visit.
-            </p>
-
-            <p>
-              We are following all government guidelines and working on practice
-              measures within the shop. We have completed necessary risk
-              assessments and all procedures which will be constantly reviewed
-              and updated where necessary in line with government guidelines.
-            </p>
-
-            <p>
-              We ask you to please use common sense to play your part keeping
-              everyone safe. In return we will be doing the same for you.
-            </p>
-
-            <p>
-              Due to the constantly changing nature of this guidance, we will be
-              continuously reviewing our procedures related to capacity.
-            </p>
-          </div>
-        </div>
+        {/* == */}
       </Page>
     </>
   )

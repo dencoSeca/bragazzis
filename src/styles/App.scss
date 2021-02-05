@@ -133,3 +133,19 @@ a {
 .spacer {
   height: 3.5rem;
 }
+
+
+.colored-link {
+  color: $red;
+}
+
+.excerpt {
+  max-width: 85%;
+  margin: 8rem auto;
+
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
