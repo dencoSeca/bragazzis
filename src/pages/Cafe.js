@@ -4,10 +4,7 @@ import React from 'react'
 import Page from '../components/Page'
 
 // Assets
-// import grinderImage from '../assets/images/bragazzis-grinder.jpg'
 import cloudImage from '../assets/images/bragazzis-clouds.jpg'
-import sandwichesImage from '../assets/images/bragazzis-sandwiches-open.jpg'
-// import cafeImage from '../assets/images/bragazzis-cafe-view-3.jpg'
 
 function Cafe({ openingHours }) {
   return (
@@ -24,7 +21,6 @@ function Cafe({ openingHours }) {
           <img src={cloudImage} alt="" className="full-width-banner__image" />
         </div>
         <div className="container">
-          {/* == */}
           <div className="excerpt">
             <p>
               We use our own carefully curated blend, roasted by <br />
@@ -46,7 +42,6 @@ function Cafe({ openingHours }) {
         <div className="full-width-banner">
           <img src={cloudImage} alt="" className="full-width-banner__image" />
         </div>
-        {/* == */}
       </Page>
     </>
   )
