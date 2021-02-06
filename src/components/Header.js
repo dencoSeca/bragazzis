@@ -98,7 +98,7 @@ function Header({ history }) {
 
   return (
     <>
-      <motion.div
+      <motion.header
         className="header"
         variants={headerVariants}
         initial="initial"
@@ -117,7 +117,7 @@ function Header({ history }) {
             <span className="header__btn-bottom-span"></span>
           </button>
         </div>
-      </motion.div>
+      </motion.header>
       <div className="menu">
         <div className="container">
           <div className="row">
